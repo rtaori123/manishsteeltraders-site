@@ -1,27 +1,33 @@
 IMAGE ASSETS — what to drop in here
 ====================================
 
-The site currently uses:
-  logo.svg      — placeholder logo (a steel bolt-head badge + I-beam mark)
-  favicon.svg   — placeholder browser-tab icon
+Already real:
+  logo-mark.png   — the gold "M" emblem (header + footer badge)
+  logo-full.png   — full logo with the name (available if you want it on a light area)
+  favicon.png     — browser-tab icon
+  (logo.svg / favicon.svg are the old placeholders, now unused — safe to delete)
 
-Replace / add real images (keep the same filenames to avoid editing HTML):
+Photos to add — each is currently a light grey "photo" box on the page. Replace the
+box with an <img> (keep these filenames and it stays tidy):
 
-  logo.svg                 -> your real logo (SVG preferred; or logo.png ~200x200)
-  favicon.svg              -> your icon (or add favicon.png / favicon.ico)
-  tmt-bars.jpg             -> photo of TMT bars at your yard        (products page)
-  structural-steel.jpg     -> photo of angles/channels/beams        (products page)
-  yard-or-team.jpg         -> yard / team / founder photo           (about page)
-  service-area.jpg         -> map or delivery-area image            (about page)
+  hero-steel.jpg        -> Home hero (steel yard / stock)
+  tmt-bars.jpg          -> Products, TMT section
+  structural-steel.jpg  -> Products, structural section
+  about-yard.jpg        -> About, "Our story"
+  director.jpg          -> About, "Leadership"  ***REAL photo of Manish Taori***
 
-Where the photo placeholders are: search the HTML for the class "ph" (the
-striped grey boxes). Replace a placeholder like:
+How to swap a placeholder: find a box like
+    <div class="photo photo--tall"><span>Photo — ...</span></div>
+and replace it with
+    <img class="photo photo--tall" src="assets/img/director.jpg"
+         alt="Manish Taori, Director, Manish Steel Traders">
+(For a normal 4:3 slot use class="photo" without --tall. Keep the alt text.)
 
-    <div class="ph"><span>Photo: TMT bars ...</span></div>
+DIRECTOR PHOTO: must be a genuine photo of Manish Taori — do not use a stock photo
+of someone else. A plain, well-lit headshot (or him at the yard) works best.
 
-with a real image:
+Licensing: only use photos you own or that are cleared for commercial use
+(your own photos are ideal). For the map on Contact, paste a Google Maps embed
+(see README), not an image.
 
-    <img src="assets/img/tmt-bars.jpg" alt="TMT reinforcement bars at Manish Steel Traders, Nagpur">
-
-Tips: use JPGs ~1200px wide, compressed (TinyPNG etc.) so the site stays fast
-on mobile data. Always fill the alt="" text (good for SEO + accessibility).
+Tips: JPGs ~1200px wide, compressed (TinyPNG) so the site stays fast on mobile.
