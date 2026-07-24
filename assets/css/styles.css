@@ -127,15 +127,19 @@ p  { margin: 0 0 1rem; }
 
 @media (max-width: 900px) {
   .nav-toggle { display: inline-flex; }
-  .nav-cta .btn-call-text { display: none; }
   .nav-links {
     position: fixed; inset: 67px 0 auto 0; flex-direction: column; align-items: stretch;
     gap: 0; background: var(--paper); border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
-    padding: 8px var(--gutter) 16px; transform: translateY(-150%); transition: transform .25s ease;
+    padding: 8px var(--gutter) 20px; transform: translateY(-150%); transition: transform .25s ease;
     max-height: calc(100vh - 67px); overflow-y: auto;
   }
   .nav-links.open { transform: translateY(0); }
-  .nav-links a { padding: 14px 8px; border-bottom: 1px solid var(--mist-2); font-size: 1.05rem; }
+  /* text links only (not the Call button): full-width rows with dividers */
+  .nav-links a:not(.btn) { display: block; padding: 15px 6px; border-bottom: 1px solid var(--mist-2); font-size: 1.06rem; }
+  /* Call button becomes a full-width, labelled button below the links */
+  .nav-links .nav-cta { display: block; margin-top: 16px; }
+  .nav-links .nav-cta .btn { display: flex; width: 100%; justify-content: center; font-size: 1.06rem; padding: .95em 1.5em; }
+  .nav-links .nav-cta .btn-call-text { display: inline; }
 }
 
 /* ---- hero ------------------------------------------------------------- */
