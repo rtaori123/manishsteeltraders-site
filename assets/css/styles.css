@@ -157,8 +157,9 @@ p { margin: 0 0 1rem; }
   padding: 26px 14px; border-right: 1px solid var(--line); color: var(--ink); transition: background .15s; }
 .product:last-child { border-right: 0; }
 .product:hover { background: var(--paper-2); color: var(--ink); }
-.product .pic { width: 74px; height: 74px; display: grid; place-items: center; }
-.product .pic svg { width: 70px; height: 70px; }
+.product .pic { width: 100%; max-width: 132px; aspect-ratio: 1; object-fit: cover; border-radius: 4px;
+  background: var(--paper-2); filter: grayscale(1) contrast(1.02); transition: filter .2s; }
+.product:hover .pic { filter: grayscale(0.15) contrast(1.03); }
 .product .plabel { font-family: var(--font-head); font-weight: 700; font-size: .74rem; text-transform: uppercase; letter-spacing: .04em; color: var(--ink); }
 @media (max-width: 1040px) { .products-grid { grid-template-columns: repeat(4, 1fr); }
   .product:nth-child(4n) { border-right: 0; } .product { border-bottom: 1px solid var(--line); } }
