@@ -20,27 +20,34 @@ The Google Fonts and, once added, the Google Map load only when you're online.)
 
 ---
 
-## Before you go live — fill these in
+## Design
 
-Everything below is a **placeholder** in the site (search for the text in brackets):
+Restrained and professional by intent — white + charcoal with the gold logo as a thin
+accent. No gradients, glow, animation, or emojis. The **home page is deliberately short**
+(hero → trust row → what we supply → one contact strip); the detail lives in the inner
+pages. This is aimed at large builders/contractors, who trust understated over flashy.
 
-1. **GST number** — replace `[add GSTIN]` (footer of every page).
-2. **Full address + PIN** — replace `Ghat Road, Nagpur, Maharashtra [PIN]` (footer + contact page).
-3. **Business hours** — on `contact.html` (`add your hours …`).
-4. **Email mailbox** — the site emails `manish@manishsteeltraders.com`. Make sure that
-   mailbox exists (set up with Google Workspace) or change it to your working address.
-5. **Product details** — on `products.html`, confirm the **grades** (Fe500/Fe500D/Fe550D),
-   **brand names**, and which structural items you actually stock. Edit the lists to match.
-6. **Stats** — the Home "trust strip" uses safe placeholders; swap in real figures you can
-   back, or leave as-is.
-7. **Testimonials** — `index.html` has two placeholder quotes. Replace with real ones (with
-   the builder's permission) or delete that section.
-8. **Photos & logo** — see `assets/img/PLACEHOLDERS.txt`. Drop in real images (keep the same
-   filenames) and swap the striped grey boxes (`class="ph"`) for `<img>` tags.
-9. **Google Map** — on `contact.html`, replace the map placeholder with your embed:
-   Google Maps → search your address → **Share → Embed a map → Copy HTML** → paste the
-   `<iframe>` in place of the `<div class="ph map-ph">…</div>`. (Add `class="map-embed"` to
-   the iframe so it's styled.)
+## Before you go live — swap these in
+
+The site is clean and honest as-is (nothing invented). To finish it:
+
+1. **Photos** — replace the light grey `class="photo"` boxes with real `<img>` tags
+   (steel yard/stock on Home & Products, yard/team on About, and the map on Contact).
+   See `assets/img/PLACEHOLDERS.txt`.
+2. **Product details** — on `products.html`, confirm the exact **TMT grades**
+   (e.g. Fe500 / Fe500D / Fe550D), **brand names**, and which **structural items** you
+   actually stock; edit the sizes/list to match.
+3. **Full address + PIN** — the site shows `Ghat Road, Nagpur, Maharashtra`; add the exact
+   street line + PIN in the footer (every page) and `contact.html`.
+4. **Google Map** — on `contact.html`, replace the map `photo` box with your embed
+   (Google Maps → search address → **Share → Embed a map → Copy HTML**); add
+   `class="map-embed"` to the pasted `<iframe>`.
+5. **Email mailbox** — the site uses `manish@manishsteeltraders.com`; make sure that
+   mailbox exists (Google Workspace) or change it to your working address.
+6. *(Optional)* **GSTIN** and **business hours** — good trust signals to add to the footer
+   / contact page once you want them shown.
+7. *(Optional)* **Testimonials** — add a short section with real builder quotes (with
+   permission) once you have them. None are shown now (better than fake ones).
 
 > The phone number `+91 98222 21699` and WhatsApp links work **today**. To change the
 > number, find-and-replace `919822221699` (WhatsApp links) and `+919822221699` (call links).
