@@ -118,6 +118,10 @@ p  { margin: 0 0 1rem; }
   display: grid; place-items: center; text-align: center; color: #a9a9a4; aspect-ratio: 4/3; padding: 20px; }
 .photo span { font-family: var(--font-head); font-weight: 600; font-size: .85rem; letter-spacing: .02em; }
 .photo--tall { aspect-ratio: auto; height: 100%; min-height: 320px; }
+/* real images dropped into a .photo slot */
+img.photo { width: 100%; height: auto; aspect-ratio: auto; object-fit: cover;
+  padding: 0; background: none; border: 1px solid var(--line); display: block; }
+img.photo.photo--tall { min-height: 0; }
 
 /* trust row */
 .trust { display: flex; flex-wrap: wrap; justify-content: center; gap: 0; }
