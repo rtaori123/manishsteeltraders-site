@@ -1,0 +1,27 @@
+IMAGE ASSETS — what to drop in here
+====================================
+
+The site currently uses:
+  logo.svg      — placeholder logo (a steel bolt-head badge + I-beam mark)
+  favicon.svg   — placeholder browser-tab icon
+
+Replace / add real images (keep the same filenames to avoid editing HTML):
+
+  logo.svg                 -> your real logo (SVG preferred; or logo.png ~200x200)
+  favicon.svg              -> your icon (or add favicon.png / favicon.ico)
+  tmt-bars.jpg             -> photo of TMT bars at your yard        (products page)
+  structural-steel.jpg     -> photo of angles/channels/beams        (products page)
+  yard-or-team.jpg         -> yard / team / founder photo           (about page)
+  service-area.jpg         -> map or delivery-area image            (about page)
+
+Where the photo placeholders are: search the HTML for the class "ph" (the
+striped grey boxes). Replace a placeholder like:
+
+    <div class="ph"><span>Photo: TMT bars ...</span></div>
+
+with a real image:
+
+    <img src="assets/img/tmt-bars.jpg" alt="TMT reinforcement bars at Manish Steel Traders, Nagpur">
+
+Tips: use JPGs ~1200px wide, compressed (TinyPNG etc.) so the site stays fast
+on mobile data. Always fill the alt="" text (good for SEO + accessibility).
