@@ -214,6 +214,9 @@ p { margin: 0 0 1rem; }
 .tile { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; }
 .tile h3 { margin-bottom: .35rem; } .tile p { color: var(--muted); margin: 0; }
 .tile-img { width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 4px; margin-bottom: 16px; display: block; }
+.quote { background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: var(--radius); padding: 24px 26px; height: 100%; margin: 0; }
+.quote p { color: var(--ink); font-style: italic; margin: 0 0 14px; }
+.quote footer { font-family: var(--font-head); font-weight: 600; color: var(--muted); font-size: .92rem; }
 .tile .more { margin-top: 16px; display: inline-flex; gap: 6px; font-family: var(--font-head); font-weight: 700; color: var(--gold-deep); font-size: .9rem; }
 
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 56px); align-items: center; }
