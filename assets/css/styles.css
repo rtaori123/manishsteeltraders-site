@@ -242,6 +242,15 @@ img.photo.photo--tall { min-height: 0; }
 .list li::before { content: ""; position: absolute; left: 0; top: 20px; width: 8px; height: 8px; background: var(--gold); border-radius: 1px; }
 .pill { display: inline-block; border: 1px solid var(--line-2); color: var(--ink); font-size: .84rem; font-family: var(--font-head); font-weight: 700; padding: 5px 12px; border-radius: 3px; margin: 0 6px 8px 0; }
 
+/* brand cards — logo sits above the write-up. Swap the .logo-ph box for an
+   <img class="brand-logo"> once real logo files are in assets/img/. */
+.brand-logo { display: block; max-width: 170px; max-height: 72px; width: auto; height: auto;
+  object-fit: contain; object-position: left center; margin-bottom: 18px; }
+.brand-card .logo-ph { max-width: 170px; margin-bottom: 20px; }
+.brand-card h3 { margin-bottom: .4rem; }
+.brand-card p { color: var(--muted); margin: 0 0 .9rem; }
+.brand-card .specs { margin: 0; }
+
 .strip { text-align: center; }
 .strip h2 { margin-bottom: .5rem; } .strip .lead { margin: 0 auto 1.3rem; }
 

@@ -91,29 +91,74 @@
 </section>
 
 <!-- ================= BRANDS WE SUPPLY =================
-     TIERING NOTE: your notes asked for "featured / affordable / other brands". I have not split
-     the five brands into tiers, because I don't know which sit where commercially — and guessing
-     could misrepresent a supplier relationship or publicly label a brand you sell as the "cheap"
-     one. Tell me the grouping and I'll split this into named tiers. Until then it reads as range
-     and choice, which carries the same message without the risk. -->
-<section class="section">
+
+     LOGOS: each card below shows a grey placeholder box instead of a logo. To swap in a real one,
+     save the file as assets/img/brand-<name>.png (transparent PNG or SVG, roughly 340x144 or larger)
+     and replace the <div class="logo-ph">...</div> line with:
+
+         <img class="brand-logo" src="assets/img/brand-tiger.png" alt="SEL Tiger TMT logo">
+
+     Get logos from the manufacturer or their dealer pack rather than by saving them off a website —
+     you want a clean transparent file, and you want to be able to say where it came from. Since we
+     are not appointed dealers, keep the wording as "brands we supply" next to any logo shown.
+
+     TIERING: your notes asked for "featured / affordable / other brands". These are ordered but not
+     labelled by price, because publicly tagging a brand you sell as the cheap one can sour the
+     relationship with that manufacturer. Tell me the grouping if you still want explicit tiers. -->
+<section class="section" id="brands">
   <div class="container">
     <div class="head">
       <span class="eyebrow">Brands</span>
       <hr class="rule">
-      <h2>Brands we supply</h2>
-      <p class="lead measure">We carry TMT bars from national and regional brands that builders across Vidarbha already know and specify.</p>
+      <h2>The brands we supply</h2>
+      <p class="lead measure">We carry TMT from national names and from mills right here in Vidarbha. Below is what each one is known for, so you can judge which suits your project — and your budget.</p>
     </div>
-    <div style="margin-top:26px">
-      <span class="pill">Tiger Steel</span>
-      <span class="pill">Kamdhenu</span>
-      <span class="pill">Lodha</span>
-      <span class="pill">Sangam</span>
-      <span class="pill">Sarthak Steel</span>
+
+    <div class="grid grid-2" style="margin-top:34px">
+
+      <article class="tile brand-card">
+        <div class="logo-ph">SEL Tiger TMT<br>logo</div>
+        <h3>SEL Tiger TMT</h3>
+        <p>The flagship reinforcement brand of Shyam Metalics, made by a fully integrated ore-to-metal route using German Thermex technology. Bars go through a three-stage quench, self-temper and atmospheric cooling cycle, giving a hard outer surface over a ductile core. Its "Tiger Bond" rib pattern is designed for grip in concrete.</p>
+        <p class="specs"><span class="pill">Fe 500D</span><span class="pill">Fe 550D</span><span class="pill">Thermex</span></p>
+      </article>
+
+      <article class="tile brand-card">
+        <div class="logo-ph">Kamdhenu<br>logo</div>
+        <h3>Kamdhenu</h3>
+        <p>One of the largest reinforcement bar brands in the country and among the most widely specified by name. BIS and ISO certified to IS&nbsp;1786 across its grade range, with low sulphur and phosphorus content for weldability and ductility. If your consultant has written a brand into the drawing, it is often this one.</p>
+        <p class="specs"><span class="pill">Fe 500</span><span class="pill">Fe 500D</span><span class="pill">Fe 550</span><span class="pill">Fe 550D</span></p>
+      </article>
+
+      <article class="tile brand-card">
+        <div class="logo-ph">Sangam Steel<br>logo</div>
+        <h3>Sangam Steel</h3>
+        <p>Our regional one — an integrated plant at Wardha, a short haul from Nagpur, and the leading reinforcement producer in Vidarbha. Runs the licensed Thermex process from H&amp;K GmbH, Germany, is BIS (ISI) registered to IS&nbsp;1786-2008, and holds ISO&nbsp;9001 and ISO&nbsp;14001. Rolls 8&nbsp;mm through 40&nbsp;mm. Being local, it is usually the quickest to replenish.</p>
+        <p class="specs"><span class="pill">Fe 500</span><span class="pill">Fe 550</span><span class="pill">Fe 550D</span><span class="pill">Made in Vidarbha</span></p>
+      </article>
+
+      <article class="tile brand-card">
+        <div class="logo-ph">Sarthak TMT<br>logo</div>
+        <h3>Sarthak TMT</h3>
+        <p>From the SKA Group, produced on Thermax QST technology. Alongside the standard range it offers a CRS (corrosion-resistant steel) line — worth considering for coastal, high-salinity or industrial exposure, or anywhere the cover concrete will be working hard. Grades run up to Fe&nbsp;600.</p>
+        <p class="specs"><span class="pill">Fe 500D</span><span class="pill">Fe 550D</span><span class="pill">Fe 600</span><span class="pill">CRS available</span></p>
+      </article>
+
+      <article class="tile brand-card">
+        <!-- Thin write-up: this is the brand I could confirm least about. Expand it from what you
+             know of the mill and why you stock it — a line on price position and availability
+             would do more here than anything I can look up. -->
+        <div class="logo-ph">Lodha TMT<br>logo</div>
+        <h3>Lodha TMT</h3>
+        <p>A Fe&nbsp;500 grade TMT bar established in the Nagpur market, stocked in the common construction sizes. Ask us how it is priced against the national brands for the quantity you need — on routine work the difference over a full slab can be worth knowing.</p>
+        <p class="specs"><span class="pill">Fe 500</span></p>
+      </article>
+
     </div>
-    <p class="measure" style="margin-top:24px">Different projects run to different budgets. Carrying a range means we can match the brand to what your project can carry without dropping below the grade your design needs — and if you want a brand we don't list, such as JSW, we can usually source it. Tell us the project and we'll set out the options.</p>
+
+    <p class="measure" style="margin-top:30px">Different projects run to different budgets. Carrying a range means we can match the brand to what your project can carry without dropping below the grade your design calls for — and if you want something we don't list, such as JSW, we can usually source it.</p>
     <div class="btn-row" style="margin-top:22px">
-      <a class="btn" href="tel:+919822221699">Ask what we stock</a>
+      <a class="btn" href="tel:+919822221699">Ask what's in stock</a>
       <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20which%20TMT%20brands%20do%20you%20have%20in%20stock%3F%20I%20need%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener">Ask on WhatsApp</a>
     </div>
   </div>
