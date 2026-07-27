@@ -20,10 +20,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=2">
 
-<!-- Structured data for Google Maps / local search. ADD WHEN KNOWN: "openingHours",
-     "email" (only once the domain is live — an address that bounces is worse than none),
-     "geo" with the exact yard coordinates, and "aggregateRating" once the Google Business
-     Profile has real reviews. Never hand-write a rating — Google must source it. -->
+<!-- Structured data for Google Maps / local search. ADD WHEN KNOWN: "email" (only once the
+     domain is live — an address that bounces is worse than none), "geo" with the exact yard
+     coordinates, and "aggregateRating" once the Google Business Profile has real reviews.
+     Never hand-write a rating — Google must source it from real reviews. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,6 +43,12 @@
     "postalCode": "440018",
     "addressCountry": "IN"
   },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }],
   "areaServed": [
     { "@type": "City", "name": "Nagpur" },
     { "@type": "AdministrativeArea", "name": "Vidarbha, Maharashtra" }
@@ -218,9 +224,10 @@
       <div class="tile"><h3>Test certificates</h3><p>Mill test certificates supplied on request — ask when you order and they come with the material.</p></div>
       <div class="tile"><h3>Five TMT brands stocked</h3><p>SEL Tiger, Kamdhenu, Sangam, Sarthak and Lodha Gold. Others, including JSW, sourced on request.</p></div>
       <div class="tile"><h3>Family-run since 1998</h3><p>The same family, the same yard, more than 25 years of supplying builders across Vidarbha.</p></div>
-      <!-- ADD WHEN SUPPLIED — each needs a real value from the owner, do not guess:
+      <div class="tile"><h3>Open six days</h3><p>Monday to Saturday, 9:00&nbsp;am to 6:00&nbsp;pm. Call within those hours and you'll reach someone who can quote.</p></div>
+      <!-- ADD WHEN SUPPLIED — each needs a real value from the owner, do not guess.
+           Adding both takes this grid to a clean 3x3:
       <div class="tile"><h3>GSTIN</h3><p>27XXXXXXXXXXXZX</p></div>
-      <div class="tile"><h3>Open</h3><p>Monday to Saturday, 0:00 am – 0:00 pm</p></div>
       <div class="tile"><h3>Minimum order</h3><p>...</p></div>
       -->
     </div>
