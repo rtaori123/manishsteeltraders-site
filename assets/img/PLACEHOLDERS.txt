@@ -28,13 +28,14 @@ of someone else. A plain, well-lit headshot (or him at the yard) works best.
 
 BRAND LOGOS — for the brand cards on quality.html#brands
 =======================================================
-Each card currently shows a grey box with the brand name. Drop these in and swap:
+DONE — already in place and wired up:
+  brand-kamdhenu.webp -> Kamdhenu
+  brand-sangam.webp   -> Sangam Steel
+  brand-sarthak.png   -> Sarthak TMT
 
-  brand-tiger.png    -> SEL Tiger TMT
-  brand-kamdhenu.png -> Kamdhenu
-  brand-sangam.png   -> Sangam Steel
-  brand-sarthak.png  -> Sarthak TMT
-  brand-lodha.png    -> Lodha TMT
+STILL NEEDED — these two cards show a grey box until the file exists:
+  brand-tiger.png    -> SEL Tiger TMT   (seltigertmt.com — right-click, Save image)
+  brand-lodha.png    -> Lodha TMT       (no manufacturer site found; ask your supplier)
 
 Transparent PNG or SVG, around 340x144 or larger. To swap, replace
     <div class="logo-ph">SEL Tiger TMT<br>logo</div>
