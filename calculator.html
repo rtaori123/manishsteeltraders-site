@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><!-- preview only; remove when live on manishsteeltraders.com -->
+<title>TMT Bar Weight Calculator — kg per Piece, Bundle &amp; Tonne | Manish Steel Traders</title>
+<meta name="description" content="Free TMT bar weight calculator. Enter diameter, length and number of pieces to get kg per piece, total kilograms and tonnes — 8 mm to 40 mm, using the standard d²/162 formula. From Manish Steel Traders, Nagpur.">
+<link rel="canonical" href="https://manishsteeltraders.com/calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TMT Bar Weight Calculator — Manish Steel Traders, Nagpur">
+<meta property="og:description" content="Work out TMT bar weight in kg and tonnes for any diameter, length and piece count.">
+<meta property="og:url" content="https://manishsteeltraders.com/calculator.html">
+<meta property="og:image" content="https://manishsteeltraders.com/assets/img/product-tmt.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=2">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
+      <span><span class="bt">MANISH STEEL TRADERS</span><span class="bs">PVT. LTD.</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a class="active" href="calculator.html">Calculator</a></li>
+      <li><a href="quality.html">Quality</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="phone" href="tel:+919822221699"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>+91 98222 21699</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Calculator</div>
+    <h1>TMT bar weight calculator</h1>
+    <p class="lead">Steel is ordered by weight but counted in pieces. Work out either one — for any diameter from 8&nbsp;mm to 40&nbsp;mm.</p>
+  </div>
+</section>
+
+<!-- ================= CALCULATOR ================= -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:start">
+
+      <article class="tile">
+        <h3>Pieces &rarr; weight</h3>
+        <p style="color:var(--muted);margin-bottom:20px">You know how many bars. Find out what they weigh.</p>
+
+        <div class="calc-field">
+          <label for="dia">Bar diameter</label>
+          <select id="dia">
+            <option value="8">8 mm</option>
+            <option value="10">10 mm</option>
+            <option value="12" selected>12 mm</option>
+            <option value="16">16 mm</option>
+            <option value="20">20 mm</option>
+            <option value="25">25 mm</option>
+            <option value="32">32 mm</option>
+            <option value="40">40 mm</option>
+          </select>
+        </div>
+
+        <div class="calc-field">
+          <label for="len">Length of each piece (metres)</label>
+          <input id="len" type="number" value="12" min="0.1" step="0.5" inputmode="decimal">
+        </div>
+
+        <div class="calc-field">
+          <label for="pcs">Number of pieces</label>
+          <input id="pcs" type="number" value="100" min="1" step="1" inputmode="numeric">
+        </div>
+
+        <div class="calc-out">
+          <div><span class="k">Per metre</span><span class="v" id="outPerM">&mdash;</span></div>
+          <div><span class="k">Per piece</span><span class="v" id="outPiece">&mdash;</span></div>
+          <div><span class="k">Total weight</span><span class="v big" id="outTotal">&mdash;</span></div>
+        </div>
+      </article>
+
+      <article class="tile">
+        <h3>Weight &rarr; pieces</h3>
+        <p style="color:var(--muted);margin-bottom:20px">You know the tonnage on the drawing. Find out how many bars that is.</p>
+
+        <div class="calc-field">
+          <label for="rDia">Bar diameter</label>
+          <select id="rDia">
+            <option value="8">8 mm</option>
+            <option value="10">10 mm</option>
+            <option value="12">12 mm</option>
+            <option value="16" selected>16 mm</option>
+            <option value="20">20 mm</option>
+            <option value="25">25 mm</option>
+            <option value="32">32 mm</option>
+            <option value="40">40 mm</option>
+          </select>
+        </div>
+
+        <div class="calc-field">
+          <label for="rLen">Length of each piece (metres)</label>
+          <input id="rLen" type="number" value="12" min="0.1" step="0.5" inputmode="decimal">
+        </div>
+
+        <div class="calc-field">
+          <label for="rTon">Quantity required (tonnes)</label>
+          <input id="rTon" type="number" value="5" min="0.01" step="0.5" inputmode="decimal">
+        </div>
+
+        <div class="calc-out">
+          <div><span class="k">Per piece</span><span class="v" id="rOutPiece">&mdash;</span></div>
+          <div><span class="k">Total kilograms</span><span class="v" id="rOutKg">&mdash;</span></div>
+          <div><span class="k">Pieces needed</span><span class="v big" id="rOutPcs">&mdash;</span></div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="note measure" style="margin-top:26px">Figures are <strong>indicative</strong>, calculated on the standard <strong>d&sup2; &divide; 162</strong> formula used with IS&nbsp;1786 bars. Actual delivered weight varies slightly by mill and by rolling tolerance, so treat this as a planning aid rather than a billing figure. We'll confirm exact weights when we quote.</p>
+
+    <div class="btn-row" style="margin-top:26px">
+      <a class="btn" href="tel:+919822221699">Call with your requirement</a>
+      <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%20worked%20out%20my%20requirement%20on%20your%20calculator.%20I%20need%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener">Send it on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REFERENCE TABLE ================= -->
+<section class="section band">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow">Quick reference</span>
+      <hr class="rule">
+      <h2>Standard TMT bar weights</h2>
+      <p class="measure">The numbers most people are actually looking for. A standard bar runs 12&nbsp;metres.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="ref-table">
+        <thead>
+          <tr><th>Diameter</th><th>Weight per metre</th><th>Weight per 12 m bar</th><th>Bars per tonne (12 m)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>8 mm</td><td>0.395 kg</td><td>4.74 kg</td><td>210</td></tr>
+          <tr><td>10 mm</td><td>0.617 kg</td><td>7.41 kg</td><td>135</td></tr>
+          <tr><td>12 mm</td><td>0.889 kg</td><td>10.67 kg</td><td>93</td></tr>
+          <tr><td>16 mm</td><td>1.580 kg</td><td>18.96 kg</td><td>52</td></tr>
+          <tr><td>20 mm</td><td>2.469 kg</td><td>29.63 kg</td><td>33</td></tr>
+          <tr><td>25 mm</td><td>3.858 kg</td><td>46.30 kg</td><td>21</td></tr>
+          <tr><td>32 mm</td><td>6.321 kg</td><td>75.85 kg</td><td>13</td></tr>
+          <tr><td>40 mm</td><td>9.877 kg</td><td>118.52 kg</td><td>8</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Bars-per-tonne is rounded down, so ordering to that figure leaves you slightly under a tonne rather than over.</p>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section strip">
+  <div class="container">
+    <h2>Know your tonnage? We'll quote it</h2>
+    <p class="lead">TMT from SEL Tiger, Kamdhenu, Sangam, Sarthak and Lodha Gold — bought direct from the mills, same-day delivery within Nagpur.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn" href="tel:+919822221699">Call +91 98222 21699</a>
+      <a class="btn btn--outline" href="products.html">See what we stock</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
+          <strong>Manish Steel Traders Pvt. Ltd.</strong>
+        </div>
+        <p>Steel distributors, stockists and retailers — TMT bars, structural steel, pipes, plates and more. Serving Nagpur and the Vidarbha region since 1998.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;(Call / WhatsApp)</li>
+          <li><a href="mailto:info@manishsteeltraders.com">info@manishsteeltraders.com</a></li>
+          <li>19 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Manish Steel Traders Pvt. Ltd.</span>
+      <span>Nagpur, Maharashtra, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/calculator.js"></script>
+</body>
+</html>
