@@ -35,6 +35,37 @@ body { margin: 0; font-family: var(--font-body); color: var(--ink); background: 
 img, svg { max-width: 100%; display: block; }
 a { color: var(--ink); text-decoration: none; }
 a:hover { color: var(--gold-deep); }
+
+/* Inline text links — gold and underlined so they are visible in prose.
+   The blanket rule above leaves links the same colour as body text with no
+   underline, which makes them invisible in a paragraph; hover-only colour is
+   no help at all on a phone.
+
+   Scoped on purpose. Nav, footer and breadcrumb links already read as links
+   from their position, and their own rules (.footer-grid a, .crumb a) are
+   more specific than these so they are untouched. Buttons are excluded
+   explicitly because .btn is often wrapped in a <p>.
+
+   Gold is 5.4:1 on white, but only 2.8:1 against the surrounding body text
+   — under the 3:1 where colour alone can carry the distinction. The
+   underline is what actually does the work; do not remove it and keep the
+   colour. */
+p a:not(.btn):not(.more),
+.list a:not(.btn):not(.more),
+.info-list a,
+.measure a:not(.btn):not(.more) {
+  color: var(--gold-deep);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+p a:not(.btn):not(.more):hover,
+.list a:not(.btn):not(.more):hover,
+.info-list a:hover,
+.measure a:not(.btn):not(.more):hover {
+  color: var(--navy);
+  text-decoration-thickness: 2px;
+}
 h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; margin: 0 0 .5em; font-weight: 700; color: var(--ink); }
 h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); letter-spacing: -.01em; }
 h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
