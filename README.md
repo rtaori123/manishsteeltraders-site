@@ -44,8 +44,9 @@ The site is clean and honest as-is (nothing invented). To finish it:
    `class="map-embed"` to the pasted `<iframe>`.
 5. **Email mailbox** — the site uses `manish@manishsteeltraders.com`; make sure that
    mailbox exists (Google Workspace) or change it to your working address.
-6. *(Optional)* **GSTIN** and **business hours** — good trust signals to add to the footer
-   / contact page once you want them shown.
+6. ~~**GSTIN**~~ — done: `27AANCM8559N1ZE` now shows in the footer of every page, on the
+   home "details" grid and in the `contact.html` info list (and as `taxID` in the
+   home-page structured data). Business hours are already shown.
 7. *(Optional)* **Testimonials** — add a short section with real builder quotes (with
    permission) once you have them. None are shown now (better than fake ones).
 
