@@ -32,7 +32,7 @@ ALL FIVE ARE IN PLACE — on the home page logo row and the quality.html brand c
   brand-tiger.png     -> SEL Tiger TMT
   brand-kamdhenu.webp -> Kamdhenu
   brand-sangam.webp   -> Sangam Steel
-  brand-sarthak.png   -> Sarthak TMT
+  brand-sky.png       -> Sky TMT  (skyalloys.co.in — NOT YET SAVED)
   brand-lodha.jpg     -> Lodha Gold TMT
 
 These came off the manufacturers' own websites, so they have white backgrounds
