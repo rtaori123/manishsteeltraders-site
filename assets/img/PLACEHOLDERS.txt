@@ -26,6 +26,32 @@ and replace it with
 DIRECTOR PHOTO: must be a genuine photo of Manish Taori — do not use a stock photo
 of someone else. A plain, well-lit headshot (or him at the yard) works best.
 
+BRAND LOGOS — for the brand cards on quality.html#brands
+=======================================================
+ALL FIVE ARE IN PLACE — on the home page logo row and the quality.html brand cards:
+  brand-tiger.png     -> SEL Tiger TMT
+  brand-kamdhenu.webp -> Kamdhenu
+  brand-sangam.webp   -> Sangam Steel
+  brand-sarthak.png   -> Sarthak TMT
+  brand-lodha.jpg     -> Lodha Gold TMT
+
+These came off the manufacturers' own websites, so they have white backgrounds
+rather than transparency (fine — the boxes they sit in are white too) and are
+fairly small files. If you can get the dealer logo pack from Sangam or Kamdhenu,
+their versions will be sharper: Sangam's carries an "A PRODUCT OF ofbusiness"
+banner, and Kamdhenu's is the corporate group mark rather than the TMT product
+mark. Save any replacement under the SAME filename and it swaps automatically.
+
+Transparent PNG or SVG, around 340x144 or larger. To swap, replace
+    <div class="logo-ph">SEL Tiger TMT<br>logo</div>
+with
+    <img class="brand-logo" src="assets/img/brand-tiger.png" alt="SEL Tiger TMT logo">
+
+Ask the manufacturer or your dealer contact for the logo pack rather than saving
+images off their website — you get a clean transparent file and you can say where
+it came from. We are not appointed dealers for these brands, so keep the wording
+around any logo as "brands we supply" — never "authorised dealer".
+
 Licensing: only use photos you own or that are cleared for commercial use
 (your own photos are ideal). For the map on Contact, paste a Google Maps embed
 (see README), not an image.

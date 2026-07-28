@@ -242,8 +242,87 @@ img.photo.photo--tall { min-height: 0; }
 .list li::before { content: ""; position: absolute; left: 0; top: 20px; width: 8px; height: 8px; background: var(--gold); border-radius: 1px; }
 .pill { display: inline-block; border: 1px solid var(--line-2); color: var(--ink); font-size: .84rem; font-family: var(--font-head); font-weight: 700; padding: 5px 12px; border-radius: 3px; margin: 0 6px 8px 0; }
 
+/* homepage brand logo row — 5 across.
+   The five logos have very different native shapes (Sarthak 258x75, Lodha
+   225x225), so sizing purely to fit the box makes the wide ones collapse to a
+   thin strip next to the square ones. Capping BOTH height and width instead
+   keeps them at a similar optical weight and centred in a uniform frame. */
+.logos--5 { grid-template-columns: repeat(5, 1fr); align-items: center; justify-items: center; }
+@media (max-width: 820px) { .logos--5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 520px) { .logos--5 { grid-template-columns: repeat(2, 1fr); } }
+.logo-box { width: 100%; aspect-ratio: 3/2; border: 1px solid var(--line); border-radius: 4px;
+  background: #fff; display: flex; align-items: center; justify-content: center; padding: 14px; }
+/* .logos .logo-box wins outright over the older `.logos img` rule above */
+.logos .logo-box img { display: block; width: auto; height: auto;
+  max-width: 88%; max-height: 64px; object-fit: contain; padding: 0; margin: 0; }
+
+/* brand cards — logo sits above the write-up. Swap the .logo-ph box for an
+   <img class="brand-logo"> once real logo files are in assets/img/. */
+.brand-logo { display: block; max-width: 170px; max-height: 72px; width: auto; height: auto;
+  object-fit: contain; object-position: left center; margin-bottom: 18px; }
+.brand-card .logo-ph { max-width: 170px; margin-bottom: 20px; }
+.brand-card h3 { margin-bottom: .4rem; }
+.brand-card p { color: var(--muted); margin: 0 0 .9rem; }
+.brand-card .specs { margin: 0; }
+
 .strip { text-align: center; }
 .strip h2 { margin-bottom: .5rem; } .strip .lead { margin: 0 auto 1.3rem; }
+
+/* ---- floating WhatsApp button (injected by main.js) ---- */
+.wa-float { position: fixed; right: 18px; bottom: 18px; z-index: 60;
+  display: inline-flex; align-items: center; gap: 9px;
+  background: #128C7E; color: #fff; border-radius: 999px; padding: 13px 20px 13px 17px;
+  font-family: var(--font-head); font-weight: 700; font-size: .95rem;
+  box-shadow: 0 6px 22px rgba(0,0,0,.26); transition: background .15s, transform .15s; }
+.wa-float:hover { background: #0f7a6d; color: #fff; transform: translateY(-1px); }
+.wa-float svg { width: 22px; height: 22px; fill: currentColor; flex: none; }
+@media (max-width: 520px) { .wa-float { padding: 14px; right: 14px; bottom: 14px; }
+  .wa-float span { display: none; } }
+@media print { .wa-float { display: none; } }
+
+/* ---- stat band ---- */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+@media (max-width: 760px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+.stat { text-align: center; padding: 26px 16px; background: #fff;
+  border: 1px solid var(--line); border-radius: var(--radius); }
+.stat .n { display: block; font-family: var(--font-head); font-weight: 800; line-height: 1.05;
+  font-size: clamp(1.7rem, 4vw, 2.3rem); color: var(--gold-deep); }
+.stat .l { display: block; margin-top: 8px; font-family: var(--font-head); font-weight: 600;
+  font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+
+/* ---- enquiry form ---- */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+@media (max-width: 620px) { .form-grid { grid-template-columns: 1fr; } }
+.form-grid .full { grid-column: 1 / -1; }
+.form-note { font-size: .88rem; color: var(--muted); margin-top: 12px; }
+.calc-field textarea { width: 100%; font: inherit; font-size: 1rem; color: var(--ink); background: #fff;
+  border: 1px solid var(--line-2); border-radius: var(--radius); padding: .7em .8em; resize: vertical; }
+.calc-field textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+
+/* ---- TMT weight calculator ---- */
+.calc-field { margin-bottom: 16px; }
+.calc-field label { display: block; font-family: var(--font-head); font-weight: 600; font-size: .84rem;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+.calc-field select, .calc-field input { width: 100%; font-family: var(--font-body, inherit); font-size: 1rem;
+  color: var(--ink); background: #fff; border: 1px solid var(--line-2); border-radius: var(--radius);
+  padding: .7em .8em; }
+.calc-field select:focus, .calc-field input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.calc-out { margin-top: 22px; border-top: 1px solid var(--line); padding-top: 18px; }
+.calc-out div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 9px 0; }
+.calc-out div + div { border-top: 1px solid var(--line); }
+.calc-out .k { font-family: var(--font-head); font-weight: 600; font-size: .82rem; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--muted); }
+.calc-out .v { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; color: var(--ink); }
+.calc-out .v.big { color: var(--gold-deep); }
+
+.table-wrap { overflow-x: auto; margin-top: 26px; }
+.ref-table { width: 100%; border-collapse: collapse; min-width: 460px; background: #fff; }
+.ref-table th, .ref-table td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+.ref-table th { font-family: var(--font-head); font-weight: 700; font-size: .8rem; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--muted); background: var(--paper-2); }
+.ref-table td { font-size: .97rem; }
+.ref-table tr:last-child td { border-bottom: 0; }
+.note { font-size: .9rem; color: var(--muted); margin-top: 14px; }
 
 .contact-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
 @media (max-width: 780px) { .contact-cards { grid-template-columns: 1fr; } }
