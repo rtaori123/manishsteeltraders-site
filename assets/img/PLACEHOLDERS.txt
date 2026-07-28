@@ -32,7 +32,14 @@ ALL FIVE ARE IN PLACE — on the home page logo row and the quality.html brand c
   brand-tiger.png     -> SEL Tiger TMT
   brand-kamdhenu.webp -> Kamdhenu
   brand-sangam.webp   -> Sangam Steel
-  brand-sky.png       -> Sky TMT  (skyalloys.co.in — NOT YET SAVED)
+  brand-sky.png       -> Sky TMT   *** STILL NEEDED ***
+
+SKY TMT LOGO — do not use the file on skyalloys.co.in. That is the "SAP"
+monogram for Sky Alloys and Power, the parent company. It reads as the SAP
+software logo, not a steel brand, and means nothing to a builder.
+Get the actual SKY TMT wordmark instead: ask your Sky dealer contact for it,
+or check instagram.com/skytmtbars. Until a real file exists the card and the
+home page logo row show the standard grey placeholder, which is fine.
   brand-lodha.jpg     -> Lodha Gold TMT
 
 These came off the manufacturers' own websites, so they have white backgrounds
