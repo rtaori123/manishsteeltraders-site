@@ -201,6 +201,8 @@ p { margin: 0 0 1rem; }
 .product:hover { background: var(--paper-2); color: var(--ink); }
 .product .pic { width: 100%; aspect-ratio: 4/3; max-height: 240px; object-fit: cover; border-radius: 4px; background: var(--paper-2); }
 .product .plabel { font-family: var(--font-head); font-weight: 700; font-size: .74rem; text-transform: uppercase; letter-spacing: .04em; color: var(--ink); }
+/* optional one-line detail under a product label (used on the stocked cards) */
+.product .pdesc { margin-top: -6px; font-size: .72rem; line-height: 1.35; color: var(--muted); max-width: 24ch; }
 @media (max-width: 640px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* ---------------- trust bar ---------------- */
