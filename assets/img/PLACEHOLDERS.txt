@@ -28,12 +28,15 @@ of someone else. A plain, well-lit headshot (or him at the yard) works best.
 
 BRAND LOGOS — for the brand cards on quality.html#brands
 =======================================================
-ALL FIVE ARE IN PLACE — on the home page logo row and the quality.html brand cards:
+FIVE ARE IN PLACE — on the home page logo row and the quality.html brand cards:
   brand-tiger.png     -> SEL Tiger TMT
   brand-kamdhenu.webp -> Kamdhenu
   brand-sangam.webp   -> Sangam Steel
   brand-sky.jpg       -> Sky TMT
   brand-lodha.jpg     -> Lodha Gold TMT
+
+  brand-nr.png        -> NR TMT   (in place since 2026-07-30 — the "NR GROUP" orange
+                                    monogram; live on the home logo row and quality.html card)
 
 Four came off the manufacturers' own websites, so they have white backgrounds
 rather than transparency (fine — the boxes they sit in are white too) and are
