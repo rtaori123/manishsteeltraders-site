@@ -309,6 +309,7 @@ img.photo.photo--tall { min-height: 0; }
 
 .strip { text-align: center; }
 .strip h2 { margin-bottom: .5rem; } .strip .lead { margin: 0 auto 1.3rem; }
+.strip .btn-row { justify-content: center; }
 
 /* ---- floating WhatsApp button (injected by main.js) ---- */
 .wa-float { position: fixed; right: 18px; bottom: 18px; z-index: 60;
