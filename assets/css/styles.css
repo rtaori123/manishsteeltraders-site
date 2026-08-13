@@ -138,13 +138,13 @@ p { margin: 0 0 1rem; }
 .nav-links a.active { color: var(--ink); border-bottom-color: var(--gold); }
 .phone { display: inline-flex; align-items: center; gap: .5em; margin-left: 10px;
   background: var(--navy); color: #fff; font-family: var(--font-head); font-weight: 700;
-  padding: .7em 1.15em; border-radius: var(--radius); font-size: .95rem; }
+  padding: .7em 1.15em; border-radius: var(--radius); font-size: .95rem; white-space: nowrap; flex: 0 0 auto; }
 .phone:hover { background: var(--navy-2); color: #fff; }
 .phone svg { width: 15px; height: 15px; fill: var(--gold-2); }
 .wa-head { display: inline-flex; align-items: center; gap: .5em; margin-left: 8px;
   background: transparent; color: var(--navy); border: 1px solid var(--navy);
   font-family: var(--font-head); font-weight: 700;
-  padding: calc(.7em - 1px) 1.1em; border-radius: var(--radius); font-size: .95rem; }
+  padding: calc(.7em - 1px) 1.1em; border-radius: var(--radius); font-size: .95rem; white-space: nowrap; flex: 0 0 auto; }
 .wa-head:hover { background: var(--navy); color: #fff; }
 .wa-head svg { width: 16px; height: 16px; fill: var(--gold-2); }
 .lang-toggle { display: inline-flex; align-items: center; gap: 2px; margin-left: 10px; }
