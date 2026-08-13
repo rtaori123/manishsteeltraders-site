@@ -18,8 +18,8 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css?v=16">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=18">
 
 <!-- Structured data for Google Maps / local search. ADD WHEN KNOWN: "email" (only once the
      domain is live — an address that bounces is worse than none), "geo" with the exact yard
@@ -107,19 +107,20 @@
   <div class="container nav">
     <a class="brand" href="index.html">
       <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-      <span><span class="bt">MANISH STEEL TRADERS</span><span class="bs">PVT. LTD.</span></span>
+      <span><span class="bt" data-i18n="brand.header">MANISH STEEL TRADERS</span><span class="bs" data-i18n="brand.suffix">PVT. LTD.</span></span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
       <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="quality.html">Brands</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+      <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       <li><a class="phone" href="tel:+919822221699"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>+91 98222 21699</a></li>
-      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg>WhatsApp</a></li>
+      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg><span data-i18n="nav.whatsapp">WhatsApp</span></a></li>
+      <li class="lang-toggle"><button type="button" data-lang="en" aria-label="English">EN</button><span class="sep">|</span><button type="button" data-lang="hi" aria-label="Hindi">हिं</button></li>
     </ul>
   </div>
 </header>
@@ -130,11 +131,11 @@
     <div class="hero-bg"><img src="assets/img/tmt-bars.jpg" alt="" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-inner">
-        <span class="eyebrow">Manish Steel Traders</span>
-        <h1>TMT &amp; Structural Steel Supplier Since 1995</h1>
-        <p>Reliable steel supply for developers, contractors and businesses across Nagpur and Vidarbha</p>
+        <span class="eyebrow" data-i18n="brand.eyebrow">Manish Steel Traders</span>
+        <h1 data-i18n="hero.h1">TMT &amp; Structural Steel Supplier Since 1995</h1>
+        <p data-i18n="hero.sub">Reliable steel supply for developers, contractors and businesses across Nagpur and Vidarbha</p>
         <div class="btn-row">
-          <a class="btn btn--light" href="tel:+919822221699">Call for a quote</a>
+          <a class="btn btn--light" href="tel:+919822221699" data-i18n="hero.cta">Call for a quote</a>
           <!-- <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener">WhatsApp a requirement</a> -->
           <!-- <a class="btn btn--ondark" href="products.html">View products</a> -->
         </div>
@@ -152,11 +153,11 @@
 <section class="section">
   <div class="container">
     <div class="stats">
-      <div class="stat"><span class="n">30+</span><span class="l">Years of Service</span></div>
-      <div class="stat"><span class="n">Same day</span><span class="l">Delivery in Nagpur</span></div>
-      <div class="stat"><span class="n">500+</span><span class="l">Customers Served</span></div>
+      <div class="stat"><span class="n">30+</span><span class="l" data-i18n="stat.years">Years of Service</span></div>
+      <div class="stat"><span class="n" data-i18n="stat.sameday">Same day</span><span class="l" data-i18n="stat.delivery">Delivery in Nagpur</span></div>
+      <div class="stat"><span class="n">500+</span><span class="l" data-i18n="stat.customers">Customers Served</span></div>
       <!-- <div class="stat"><span class="n">8&ndash;32<small>mm</small></span><span class="l">TMT Sizes Held in Yard</span></div> -->
-      <div class="stat"><span class="n">10000+</span><span class="l">Tons Supplied</span></div>
+      <div class="stat"><span class="n">10,000+</span><span class="l" data-i18n="stat.tons">Tons Supplied</span></div>
     </div>
   </div>
 </section>
@@ -189,31 +190,31 @@
 <!-- ================= OUR PRODUCTS ================= -->
 <section class="section band">
   <div class="container">
-    <div class="sec-head"><h2>Our products</h2></div>
-    <p class="center lead" style="margin:0 auto 34px">TMT reinforcement bars are our main line. We keep them in our own yard along with binding wire, ready to load. Structural sections and the rest of the steel range we bring in to order.</p>
+    <div class="sec-head"><h2 data-i18n="prod.h2">Our products</h2></div>
+    <p class="center lead" style="margin:0 auto 34px" data-i18n="prod.intro">TMT reinforcement bars are our main line. We keep them in our own yard along with binding wire, ready to load. Structural sections and the rest of the steel range we bring in to order.</p>
 
-    <p style="font-family:var(--font-head);font-weight:700;margin:0 0 14px">Our Speciality - Stocked in our yard</p>
+    <p style="font-family:var(--font-head);font-weight:700;margin:0 0 14px" data-i18n="prod.stocked">Our Speciality - Stocked in our yard</p>
     <div class="products-grid">
-      <a class="product" href="products.html"><img class="pic" src="assets/img/product-tmt.jpg" alt="TMT reinforcement bars" loading="lazy"><span class="plabel">TMT Bars</span><span class="pdesc">Fe 500 and 550D, 8 to 32 mm</span></a>
-      <a class="product" href="products.html"><img class="pic" src="assets/img/product-wires.jpg" alt="Binding wire" loading="lazy"><span class="plabel">Binding Wire</span><span class="pdesc">For tying reinforcement on site</span></a>
+      <a class="product" href="products.html"><img class="pic" src="assets/img/product-tmt.jpg" alt="TMT reinforcement bars" loading="lazy"><span class="plabel" data-i18n="prod.tmt.label">TMT Bars</span><span class="pdesc" data-i18n="prod.tmt.desc">Fe 500 and 550D, 8 to 32 mm</span></a>
+      <a class="product" href="products.html"><img class="pic" src="assets/img/product-wires.jpg" alt="Binding wire" loading="lazy"><span class="plabel" data-i18n="prod.wire.label">Binding Wire</span><span class="pdesc" data-i18n="prod.wire.desc">For tying reinforcement on site</span></a>
     </div>
 
-    <p style="font-family:var(--font-head);font-weight:700;margin:34px 0 14px">Sourced to order</p>
+    <p style="font-family:var(--font-head);font-weight:700;margin:34px 0 14px" data-i18n="prod.sourced">Sourced to order</p>
     <div class="products-grid">
-      <a class="product" href="products.html"><img class="pic" src="assets/img/product-angles.jpg" alt="Steel angles and channels" loading="lazy"><span class="plabel">Angles &amp; Channels</span></a>
-      <a class="product" href="products.html"><img class="pic" src="assets/img/product-plates.jpg" alt="Steel plates and sheets" loading="lazy"><span class="plabel">Plates &amp; Sheets</span></a>
-      <a class="product" href="products.html"><img class="pic" src="assets/img/product-pipes.jpg" alt="Steel pipes and tubes" loading="lazy"><span class="plabel">Pipes &amp; Tubes</span></a>
-      <a class="product" href="products.html"><img class="pic" src="assets/img/product-round.jpg" alt="Round and square steel bars" loading="lazy"><span class="plabel">Round &amp; Square Bars</span></a>
+      <a class="product" href="products.html"><img class="pic" src="assets/img/product-angles.jpg" alt="Steel angles and channels" loading="lazy"><span class="plabel" data-i18n="prod.angles">Angles &amp; Channels</span></a>
+      <a class="product" href="products.html"><img class="pic" src="assets/img/product-plates.jpg" alt="Steel plates and sheets" loading="lazy"><span class="plabel" data-i18n="prod.plates">Plates &amp; Sheets</span></a>
+      <a class="product" href="products.html"><img class="pic" src="assets/img/product-pipes.jpg" alt="Steel pipes and tubes" loading="lazy"><span class="plabel" data-i18n="prod.pipes">Pipes &amp; Tubes</span></a>
+      <a class="product" href="products.html"><img class="pic" src="assets/img/product-round.jpg" alt="Round and square steel bars" loading="lazy"><span class="plabel" data-i18n="prod.round">Round &amp; Square Bars</span></a>
     </div>
-    <p class="center" style="margin-top:30px"><a class="btn btn--outline" href="products.html">View all products</a></p>
+    <p class="center" style="margin-top:30px"><a class="btn btn--outline" href="products.html" data-i18n="prod.viewall">View all products</a></p>
   </div>
 </section>
 
 <!-- ================= BRANDS WE SUPPLY ================= -->
 <section class="section">
   <div class="container">
-    <div class="sec-head"><h2>Popular brands we supply</h2></div>
-    <p class="center lead" style="margin:0 auto 28px">We stock TMT bars from national and regional brands that builders across Vidarbha already know and specify.</p>
+    <div class="sec-head"><h2 data-i18n="brands.h2">Popular brands we supply</h2></div>
+    <p class="center lead" style="margin:0 auto 28px" data-i18n="brands.intro">We stock TMT bars from national and regional brands that builders across Vidarbha already know and specify.</p>
     <div class="logos logos--6">
       <div class="logo-box"><a href="quality.html#brand-tiger" aria-label="Read about SEL Tiger TMT"><img src="assets/img/brand-tiger.png" alt="SEL Tiger TMT" loading="lazy"></a></div>
       <div class="logo-box"><a href="quality.html#brand-kamdhenu" aria-label="Read about Kamdhenu"><img src="assets/img/brand-kamdhenu.webp" alt="Kamdhenu" loading="lazy"></a></div>
@@ -222,51 +223,51 @@
       <div class="logo-box"><a href="quality.html#brand-lodha" aria-label="Read about Lodha Gold TMT"><img src="assets/img/brand-lodha.jpg" alt="Lodha Gold TMT" loading="lazy"></a></div>
       <div class="logo-box"><a href="quality.html#brand-nr" aria-label="Read about NR TMT"><img src="assets/img/brand-nr.png" alt="NR TMT" loading="lazy"></a></div>
     </div>
-    <p class="center lead" style="margin:26px auto 0">Need a brand that isn't listed? We can usually source it. <a href="tel:+919822221699">Call us</a> to check.</p>
-    <p class="center" style="margin-top:26px"><a class="btn btn--outline" href="quality.html#brands">About each brand</a></p>
+    <p class="center lead" style="margin:26px auto 0" data-i18n="brands.source">Need a brand that isn't listed? We can usually source it. <a href="tel:+919822221699">Call us</a> to check.</p>
+    <p class="center" style="margin-top:26px"><a class="btn btn--outline" href="quality.html#brands" data-i18n="brands.about">About each brand</a></p>
   </div>
 </section>
 
 <!-- ================= WHO WE SERVE ================= -->
 <section class="section band">
   <div class="container">
-    <div class="sec-head"><h2>Who buys from us?</h2></div>
-    <p class="center lead" style="margin:0 auto 34px">If you buy steel anywhere in Nagpur or the wider Vidarbha region, we are set up to supply you.</p>
+    <div class="sec-head"><h2 data-i18n="who.h2">Who buys from us?</h2></div>
+    <p class="center lead" style="margin:0 auto 34px" data-i18n="who.intro">If you buy steel anywhere in Nagpur or the wider Vidarbha region, we are set up to supply you.</p>
     <div class="grid grid-3" style="margin-top:6px">
-      <div class="tile"><h3>Builders &amp; developers</h3>
-        <a class="more" href="https://wa.me/919822221699?text=Hi%2C%20I%27m%20a%20builder%20and%20need%20steel%20for%20a%20project.%20Requirement%3A%20(size%20%2F%20grade%20%2F%20quantity%20%2F%20site)" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg>Get a quote for your project</a></div>
-      <div class="tile"><h3>Contractors &amp; engineers</h3>
-        <a class="more" href="https://wa.me/919822221699?text=Hi%2C%20I%20need%20a%20quote%20against%20a%20drawing.%20Requirement%3A%20(size%20%2F%20grade%20%2F%20quantity%20%2F%20when)" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg>Get a quote for your drawing</a></div>
-      <div class="tile"><h3>Hardware retailers</h3>
-        <a class="more" href="https://wa.me/919822221699?text=Hi%2C%20I%20run%20a%20hardware%20shop%20and%20want%20trade%20rates.%20I%20usually%20stock%3A" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg>Ask about trade rates</a></div>
+      <div class="tile"><h3 data-i18n="who.builders.title">Builders &amp; developers</h3>
+        <a class="more" href="https://wa.me/919822221699?text=Hi%2C%20I%27m%20a%20builder%20and%20need%20steel%20for%20a%20project.%20Requirement%3A%20(size%20%2F%20grade%20%2F%20quantity%20%2F%20site)" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg><span data-i18n="who.builders.cta">Get a quote for your project</span></a></div>
+      <div class="tile"><h3 data-i18n="who.contractors.title">Contractors &amp; engineers</h3>
+        <a class="more" href="https://wa.me/919822221699?text=Hi%2C%20I%20need%20a%20quote%20against%20a%20drawing.%20Requirement%3A%20(size%20%2F%20grade%20%2F%20quantity%20%2F%20when)" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg><span data-i18n="who.contractors.cta">Get a quote for your drawing</span></a></div>
+      <div class="tile"><h3 data-i18n="who.retailers.title">Hardware retailers</h3>
+        <a class="more" href="https://wa.me/919822221699?text=Hi%2C%20I%20run%20a%20hardware%20shop%20and%20want%20trade%20rates.%20I%20usually%20stock%3A" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg><span data-i18n="who.retailers.cta">Ask about trade rates</span></a></div>
     </div>
-    <p class="center lead" style="margin:28px auto 0">Unsure of the quantity? Our <a href="calculator.html">TMT weight chart</a> turns bars into tonnes and back.</p>
+    <p class="center lead" style="margin:28px auto 0" data-i18n="who.calc">Unsure of the quantity? Our <a href="calculator.html">TMT weight chart</a> turns bars into tonnes and back.</p>
   </div>
 </section>
 
 <!-- ================= THE DETAILS YOU'LL WANT ================= -->
 <section class="section">
   <div class="container">
-    <div class="sec-head"><h2>Why customers keep coming back</h2></div>
+    <div class="sec-head"><h2 data-i18n="why.h2">Why customers keep coming back</h2></div>
     <div class="grid grid-3">
       <div class="tile">
         <svg class="tile-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 5.5h12v10h-12z"/><path d="M13.5 8.5h3.7l3.3 3.3v3.7h-7z"/><circle cx="6" cy="18" r="1.7"/><circle cx="17" cy="18" r="1.7"/></svg>
-        <h3>Same-day delivery</h3><p>In Nagpur, ordered by morning</p></div>
+        <h3 data-i18n="why.sameday.t">Same-day delivery</h3><p data-i18n="why.sameday.d">In Nagpur, ordered by morning</p></div>
       <div class="tile">
         <svg class="tile-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>
-        <h3>No minimum order</h3><p>A few bundles or a full truck</p></div>
+        <h3 data-i18n="why.nomin.t">No minimum order</h3><p data-i18n="why.nomin.d">A few bundles or a full truck</p></div>
       <div class="tile">
         <svg class="tile-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="2"/><path d="M2.5 9.5h19"/></svg>
-        <h3>Credit terms</h3><p>Available for established accounts</p></div>
+        <h3 data-i18n="why.credit.t">Credit terms</h3><p data-i18n="why.credit.d">Available for established accounts</p></div>
       <div class="tile">
         <svg class="tile-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
-        <h3>Quick to quote</h3><p>A rate back the same day</p></div>
+        <h3 data-i18n="why.quick.t">Quick to quote</h3><p data-i18n="why.quick.d">A rate back the same day</p></div>
       <div class="tile">
         <svg class="tile-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 4.5 5.5v6c0 4.5 3.2 8 7.5 9.5 4.3-1.5 7.5-5 7.5-9.5v-6z"/><path d="M8.7 12l2.3 2.3 4.3-4.5"/></svg>
-        <h3>Genuine material only</h3><p>Branded bars, never duplicate</p></div>
+        <h3 data-i18n="why.genuine.t">Genuine material only</h3><p data-i18n="why.genuine.d">Branded bars, never duplicate</p></div>
       <div class="tile">
         <svg class="tile-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4 4v15H6z"/><path d="M14 2.5v4h4"/><path d="M9 12h6M9 15.5h6"/></svg>
-        <h3>GST-registered</h3><p>Proper tax invoice, every order</p></div>
+        <h3 data-i18n="why.gst.t">GST-registered</h3><p data-i18n="why.gst.d">Proper tax invoice, every order</p></div>
     </div>
   </div>
 </section>
@@ -275,34 +276,34 @@
 <section class="section band">
   <div class="container">
     <div class="head">
-      <span class="eyebrow">Where we deliver</span>
+      <span class="eyebrow" data-i18n="areas.eyebrow">Where we deliver</span>
       <hr class="rule">
-      <h2>Areas we serve</h2>
-      <p class="measure">Nagpur city and the surrounding metropolitan area, and across the wider Vidarbha region.</p>
+      <h2 data-i18n="areas.h2">Areas we serve</h2>
+      <p class="measure" data-i18n="areas.intro">Nagpur city and the surrounding metropolitan area, and across the wider Vidarbha region.</p>
     </div>
     <div style="margin-top:20px">
-      <p style="font-family:var(--font-head);font-weight:700;margin-bottom:10px">Nagpur and around</p>
-      <span class="pill">Nagpur city</span>
-      <span class="pill">Kamptee</span>
-      <span class="pill">Hingna</span>
-      <span class="pill">Butibori</span>
-      <span class="pill">Umred</span>
-      <span class="pill">Saoner</span>
-      <span class="pill">Katol</span>
-      <span class="pill">Ramtek</span>
-      <span class="pill">Parseoni</span>
+      <p style="font-family:var(--font-head);font-weight:700;margin-bottom:10px" data-i18n="areas.nagpur">Nagpur and around</p>
+      <span class="pill" data-i18n="area.nagpurcity">Nagpur city</span>
+      <span class="pill" data-i18n="area.kamptee">Kamptee</span>
+      <span class="pill" data-i18n="area.hingna">Hingna</span>
+      <span class="pill" data-i18n="area.butibori">Butibori</span>
+      <span class="pill" data-i18n="area.umred">Umred</span>
+      <span class="pill" data-i18n="area.saoner">Saoner</span>
+      <span class="pill" data-i18n="area.katol">Katol</span>
+      <span class="pill" data-i18n="area.ramtek">Ramtek</span>
+      <span class="pill" data-i18n="area.parseoni">Parseoni</span>
     </div>
     <div style="margin-top:22px">
-      <p style="font-family:var(--font-head);font-weight:700;margin-bottom:10px">Across Vidarbha</p>
-      <span class="pill">Wardha</span>
-      <span class="pill">Bhandara</span>
-      <span class="pill">Tumsar</span>
-      <span class="pill">Gondia</span>
-      <span class="pill">Chandrapur</span>
-      <span class="pill">Amravati</span>
-      <span class="pill">Yavatmal</span>
+      <p style="font-family:var(--font-head);font-weight:700;margin-bottom:10px" data-i18n="areas.vidarbha">Across Vidarbha</p>
+      <span class="pill" data-i18n="area.wardha">Wardha</span>
+      <span class="pill" data-i18n="area.bhandara">Bhandara</span>
+      <span class="pill" data-i18n="area.tumsar">Tumsar</span>
+      <span class="pill" data-i18n="area.gondia">Gondia</span>
+      <span class="pill" data-i18n="area.chandrapur">Chandrapur</span>
+      <span class="pill" data-i18n="area.amravati">Amravati</span>
+      <span class="pill" data-i18n="area.yavatmal">Yavatmal</span>
     </div>
-    <p class="measure" style="margin-top:18px">Site somewhere not listed? Ask anyway. If it is a reasonable run from Nagpur, we will usually quote it.</p>
+    <p class="measure" style="margin-top:18px" data-i18n="areas.note">Site somewhere not listed? Ask anyway. If it is a reasonable run from Nagpur, we will usually quote it.</p>
   </div>
 </section>
 
@@ -336,21 +337,21 @@
   <div class="container">
     <div class="split">
       <div>
-        <span class="eyebrow">Already have a steel supplier?</span>
+        <span class="eyebrow" data-i18n="cmp.eyebrow">Already have a steel supplier?</span>
         <hr class="rule">
-        <h2>It costs nothing to compare</h2>
-        <p class="lead">Send us the size, grade and quantity, and get our rate to set against your current supplier. Our price and terms often come out better than you expect.</p>
-        <p class="lead">No obligation to buy. One quote, and you decide.</p>
+        <h2 data-i18n="cmp.h2">It costs nothing to compare</h2>
+        <p class="lead" data-i18n="cmp.p1">Send us the size, grade and quantity, and get our rate to set against your current supplier. Our price and terms often come out better than you expect.</p>
+        <p class="lead" data-i18n="cmp.p2">No obligation to buy. One quote, and you decide.</p>
         <div class="btn-row" style="margin-top:22px">
-          <a class="btn" href="tel:+919822221699">Call +91 98222 21699</a>
-          <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20to%20compare%20a%20rate.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener">Send a requirement</a>
+          <a class="btn" href="tel:+919822221699" data-i18n="cmp.call">Call +91 98222 21699</a>
+          <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20to%20compare%20a%20rate.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener" data-i18n="cmp.send">Send a requirement</a>
         </div>
       </div>
       <div class="split-media">
         <iframe class="map-embed" title="Manish Steel Traders — location on Google Maps"
           src="https://www.google.com/maps?q=Manish+Steel+Traders,+17+Chandak+Layout,+Ghat+Rd,+Ganeshpeth+Colony,+Nagpur,+Maharashtra+440018&z=16&output=embed"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        <p style="margin-top:14px"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Manish+Steel+Traders%2C+17+Chandak+Layout%2C+Ghat+Rd%2C+Ganeshpeth+Colony%2C+Nagpur%2C+Maharashtra+440018" target="_blank" rel="noopener">Get directions to the yard &rarr;</a></p>
+        <p style="margin-top:14px"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Manish+Steel+Traders%2C+17+Chandak+Layout%2C+Ghat+Rd%2C+Ganeshpeth+Colony%2C+Nagpur%2C+Maharashtra+440018" target="_blank" rel="noopener" data-i18n="cmp.directions">Get directions to the yard &rarr;</a></p>
       </div>
     </div>
   </div>
@@ -363,40 +364,41 @@
       <div>
         <div class="footer-brand">
           <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-          <strong>Manish Steel Traders Pvt. Ltd.</strong>
+          <strong data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</strong>
         </div>
-        <p>Steel distributors, stockists and retailers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
+        <p data-i18n="footer.tagline">Steel distributors, stockists and retailers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
       </div>
       <div>
-        <h4>Pages</h4>
+        <h4 data-i18n="footer.pages">Pages</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="calculator.html">TMT weight chart</a></li>
-          <li><a href="quality.html">Brands</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="calculator.html" data-i18n="footer.calc">TMT weight chart</a></li>
+          <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="faq.html" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="nav.contact">Contact</h4>
         <ul class="footer-links">
-          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;(Call / WhatsApp)</li>
+          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;<span data-i18n="footer.callwa">(Call / WhatsApp)</span></li>
           <li><a href="tel:+918380031699">+91 83800 31699</a></li>
           <li><a href="mailto:info@manishsteeltraders.com">info@manishsteeltraders.com</a></li>
-          <li>17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
+          <li data-i18n="footer.address">17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> Manish Steel Traders Pvt. Ltd.</span>
+      <span>© <span id="year">2026</span> <span data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</span></span>
       <span>GSTIN 27AANCM8559N1ZE</span>
-      <span>Nagpur, Maharashtra, India</span>
+      <span data-i18n="footer.location">Nagpur, Maharashtra, India</span>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=2"></script>
+<script src="assets/js/i18n-hi.js?v=5"></script>
+<script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
