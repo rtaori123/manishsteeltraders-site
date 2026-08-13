@@ -131,18 +131,24 @@ p { margin: 0 0 1rem; }
 .brand .bs { display: block; font-family: var(--font-head); font-weight: 600; font-size: .72rem;
   letter-spacing: .34em; color: var(--gold-deep); margin-top: 3px; }
 .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0; }
-.nav-links a:not(.phone) { font-family: var(--font-head); font-weight: 600; text-transform: uppercase;
+.nav-links a:not(.phone):not(.wa-head) { font-family: var(--font-head); font-weight: 600; text-transform: uppercase;
   letter-spacing: .04em; color: var(--ink); padding: 10px 14px; font-size: .9rem;
   border-bottom: 2px solid transparent; }
-.nav-links a:not(.phone):hover { color: var(--gold-deep); }
+.nav-links a:not(.phone):not(.wa-head):hover { color: var(--gold-deep); }
 .nav-links a.active { color: var(--ink); border-bottom-color: var(--gold); }
 .phone { display: inline-flex; align-items: center; gap: .5em; margin-left: 10px;
   background: var(--navy); color: #fff; font-family: var(--font-head); font-weight: 700;
   padding: .7em 1.15em; border-radius: var(--radius); font-size: .95rem; }
 .phone:hover { background: var(--navy-2); color: #fff; }
 .phone svg { width: 15px; height: 15px; fill: var(--gold-2); }
+.wa-head { display: inline-flex; align-items: center; gap: .5em; margin-left: 8px;
+  background: transparent; color: var(--navy); border: 1px solid var(--navy);
+  font-family: var(--font-head); font-weight: 700;
+  padding: calc(.7em - 1px) 1.1em; border-radius: var(--radius); font-size: .95rem; }
+.wa-head:hover { background: var(--navy); color: #fff; }
+.wa-head svg { width: 16px; height: 16px; fill: var(--gold-2); }
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 6px; color: var(--ink); }
-.nav-toggle svg { width: 28px; height: 28px; }
+.nav-toggle svg { width: 32px; height: 32px; }
 
 @media (max-width: 940px) {
   .nav-toggle { display: inline-flex; }
@@ -152,9 +158,10 @@ p { margin: 0 0 1rem; }
     padding: 6px var(--gutter) 18px; transform: translateY(-160%); transition: transform .22s ease;
     max-height: calc(100vh - 71px); overflow-y: auto; }
   .nav-links.open { transform: translateY(0); }
-  .nav-links a:not(.phone) { padding: 16px 4px; font-size: 1.08rem; border-bottom: 1px solid var(--line); }
+  .nav-links a:not(.phone):not(.wa-head) { display: block; padding: 15px 2px; font-size: 1.08rem; line-height: 1.2; border-bottom: 1px solid var(--line); }
   .nav-links a.active { border-bottom-color: var(--line); color: var(--gold-deep); }
   .phone { margin: 16px 0 0; justify-content: center; }
+  .wa-head { margin: 10px 0 0; justify-content: center; }
 }
 
 /* ---------------- hero (dark, image right) ---------------- */
