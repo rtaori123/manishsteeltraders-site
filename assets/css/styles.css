@@ -258,7 +258,8 @@ p { margin: 0 0 1rem; }
 .quote { background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: var(--radius); padding: 24px 26px; height: 100%; margin: 0; }
 .quote p { color: var(--ink); font-style: italic; margin: 0 0 14px; }
 .quote footer { font-family: var(--font-head); font-weight: 600; color: var(--muted); font-size: .92rem; }
-.tile .more { margin-top: 16px; display: inline-flex; gap: 6px; font-family: var(--font-head); font-weight: 700; color: var(--gold-deep); font-size: .9rem; }
+.tile .more { margin-top: 16px; display: inline-flex; align-items: center; gap: 7px; font-family: var(--font-head); font-weight: 700; color: var(--gold-deep); font-size: .9rem; }
+.more .wa-ico { width: 16px; height: 16px; flex: 0 0 auto; fill: currentColor; }
 
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 56px); align-items: center; }
 .split--rev .split-media { order: -1; }
