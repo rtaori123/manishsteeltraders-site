@@ -1,23 +1,23 @@
 /* =========================================================================
    Manish Steel Traders — stylesheet
-   Navy + gold, product-forward, professional. (Layout after the approved
-   reference, recoloured to the brand gold.)
+   Charcoal + orange, product-forward, professional. (Layout after the approved
+   reference, recoloured to match the orange-painted yard.)
    ========================================================================= */
 
 :root {
-  --navy:      #16232f;   /* dark sections / hero / trust / footer */
-  --navy-2:    #1d2e3c;
-  --navy-3:    #24384a;
+  --navy:      #1c1a17;   /* dark sections / hero / trust / footer (warm charcoal) */
+  --navy-2:    #2a2622;
+  --navy-3:    #38332d;
   --ink:       #1f2733;   /* text on light */
   --muted:     #5f6b78;
   --paper:     #ffffff;
   --paper-2:   #f4f4f2;   /* light band / products */
   --line:      #e4e4e1;
   --line-2:    #d5d5d1;
-  --line-dark: #2c3d4d;   /* dividers on navy */
-  --gold:      #b8860b;   /* accent (muted brass) */
-  --gold-2:    #c9a54a;
-  --gold-deep: #8a6408;
+  --line-dark: #3a352f;   /* dividers on charcoal */
+  --gold:      #ea6a1e;   /* accent (bright orange) — decorative / on light */
+  --gold-2:    #f2853c;   /* accent on dark (bright orange) */
+  --gold-deep: #c2410b;   /* accent text/icons on white (burnt orange, AA) */
   --on-dark:   #e9edf1;
   --on-dark-mut:#9fb1c0;
 
