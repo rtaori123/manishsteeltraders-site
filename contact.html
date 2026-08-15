@@ -16,7 +16,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=19">
 </head>
 <body>
@@ -25,28 +25,29 @@
   <div class="container nav">
     <a class="brand" href="index.html">
       <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-      <span><span class="bt">MANISH STEEL TRADERS</span><span class="bs">PVT. LTD.</span></span>
+      <span><span class="bt" data-i18n="brand.header">MANISH STEEL TRADERS</span><span class="bs" data-i18n="brand.suffix">PVT. LTD.</span></span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
       <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="quality.html">Brands</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a class="active" href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+      <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a class="active" href="contact.html" data-i18n="nav.contact">Contact</a></li>
       <li><a class="phone" href="tel:+919822221699"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>+91 98222 21699</a></li>
-      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg>WhatsApp</a></li>
+      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg><span data-i18n="nav.whatsapp">WhatsApp</span></a></li>
+      <li class="lang-toggle"><button type="button" data-lang="en" aria-label="English">EN</button><span class="sep">|</span><button type="button" data-lang="hi" aria-label="Hindi">हिं</button></li>
     </ul>
   </div>
 </header>
 
 <section class="page-hero">
   <div class="container">
-    <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</div>
-    <h1>Contact us</h1>
-    <p class="lead">The quickest way to a quote is a call or WhatsApp. Tell us your sizes, grades and quantity.</p>
+    <div class="crumb" data-i18n="ct.crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</div>
+    <h1 data-i18n="ct.hero.h1">Contact us</h1>
+    <p class="lead" data-i18n="ct.hero.lead">The quickest way to a quote is a call or WhatsApp. Tell us your sizes, grades and quantity.</p>
   </div>
 </section>
 
@@ -55,18 +56,18 @@
     <div class="contact-cards">
       <a class="ccard" href="tel:+919822221699">
         <span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg></span>
-        <div class="k">Call</div>
+        <div class="k" data-i18n="ct.card.call">Call</div>
         <div class="v">+91 98222 21699</div>
         <div class="v" style="font-size:1rem;margin-top:2px">+91 83800 31699</div>
       </a>
       <a class="ccard" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel." target="_blank" rel="noopener">
         <span class="ic"><svg viewBox="0 0 24 24"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg></span>
-        <div class="k">WhatsApp</div>
+        <div class="k" data-i18n="ct.card.whatsapp">WhatsApp</div>
         <div class="v">+91 98222 21699</div>
       </a>
       <a class="ccard" href="mailto:info@manishsteeltraders.com">
         <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v.4l8 5 8-5V6H4m16 12V8.9l-8 5-8-5V18z"/></svg></span>
-        <div class="k">Email</div>
+        <div class="k" data-i18n="ct.card.email">Email</div>
         <div class="v">info@manishsteeltraders.com</div>
       </a>
     </div>
@@ -82,59 +83,59 @@
 <section class="section band" id="enquiry">
   <div class="container">
     <div class="head">
-      <span class="eyebrow">Send an enquiry</span>
+      <span class="eyebrow" data-i18n="ct.enq.eyebrow">Send an enquiry</span>
       <hr class="rule">
-      <h2>Tell us what you need</h2>
-      <p class="measure">Fill this in and it opens WhatsApp with your enquiry already written — you just press send. Quicker than typing it out, and nothing gets missed.</p>
+      <h2 data-i18n="ct.enq.h2">Tell us what you need</h2>
+      <p class="measure" data-i18n="ct.enq.intro">Fill this in and it opens WhatsApp with your enquiry already written — you just press send. Quicker than typing it out, and nothing gets missed.</p>
     </div>
 
     <form id="enquiryForm" class="form-grid" style="margin-top:28px" novalidate>
       <div class="calc-field">
-        <label for="qName">Your name</label>
+        <label for="qName" data-i18n="ct.enq.name">Your name</label>
         <input id="qName" type="text" autocomplete="name" placeholder="Name">
       </div>
       <div class="calc-field">
-        <label for="qWho">You are a</label>
+        <label for="qWho" data-i18n="ct.enq.who">You are a</label>
         <select id="qWho">
-          <option>Builder or developer</option>
-          <option>Contractor</option>
-          <option>Engineer or consultant</option>
-          <option>Hardware retailer</option>
-          <option>Building my own house</option>
-          <option>Other</option>
+          <option data-i18n="ct.enq.who.builder">Builder or developer</option>
+          <option data-i18n="ct.enq.who.contractor">Contractor</option>
+          <option data-i18n="ct.enq.who.engineer">Engineer or consultant</option>
+          <option data-i18n="ct.enq.who.retailer">Hardware retailer</option>
+          <option data-i18n="ct.enq.who.self">Building my own house</option>
+          <option data-i18n="ct.enq.who.other">Other</option>
         </select>
       </div>
       <div class="calc-field">
-        <label for="qProduct">What you need</label>
+        <label for="qProduct" data-i18n="ct.enq.product">What you need</label>
         <select id="qProduct">
-          <option>TMT reinforcement bars</option>
-          <option>Structural steel</option>
-          <option>Pipes &amp; tubes</option>
-          <option>Plates &amp; sheets</option>
-          <option>Angles &amp; channels</option>
-          <option>Binding wire</option>
-          <option>Something else</option>
+          <option data-i18n="ct.enq.product.tmt">TMT reinforcement bars</option>
+          <option data-i18n="ct.enq.product.structural">Structural steel</option>
+          <option data-i18n="ct.enq.product.pipes">Pipes &amp; tubes</option>
+          <option data-i18n="ct.enq.product.plates">Plates &amp; sheets</option>
+          <option data-i18n="ct.enq.product.angles">Angles &amp; channels</option>
+          <option data-i18n="ct.enq.product.wire">Binding wire</option>
+          <option data-i18n="ct.enq.product.other">Something else</option>
         </select>
       </div>
       <div class="calc-field">
-        <label for="qSpec">Size &amp; grade</label>
+        <label for="qSpec" data-i18n="ct.enq.spec">Size &amp; grade</label>
         <input id="qSpec" type="text" placeholder="e.g. 12 mm and 16 mm, Fe 500D">
       </div>
       <div class="calc-field">
-        <label for="qQty">Quantity</label>
+        <label for="qQty" data-i18n="ct.enq.qty">Quantity</label>
         <input id="qQty" type="text" placeholder="e.g. 5 tonnes — or use our calculator">
       </div>
       <div class="calc-field">
-        <label for="qWhere">Delivery location</label>
+        <label for="qWhere" data-i18n="ct.enq.where">Delivery location</label>
         <input id="qWhere" type="text" placeholder="Site or area, e.g. Manish Nagar, Nagpur">
       </div>
       <div class="calc-field full">
-        <label for="qMsg">Anything else</label>
+        <label for="qMsg" data-i18n="ct.enq.msg">Anything else</label>
         <textarea id="qMsg" rows="3" placeholder="Timeline, brand preference, or any question"></textarea>
       </div>
       <div class="full">
-        <button class="btn btn--wa" type="submit">Open in WhatsApp &rarr;</button>
-        <p class="form-note" id="qNote">Nothing is sent from this page and nothing is stored — pressing the button just opens WhatsApp with the message ready. Not on WhatsApp? <a href="tel:+919822221699">Call +91 98222 21699</a> instead.</p>
+        <button class="btn btn--wa" type="submit" data-i18n="ct.enq.submit">Open in WhatsApp &rarr;</button>
+        <p class="form-note" id="qNote" data-i18n="ct.enq.note">Nothing is sent from this page and nothing is stored — pressing the button just opens WhatsApp with the message ready. Not on WhatsApp? <a href="tel:+919822221699">Call +91 98222 21699</a> instead.</p>
       </div>
     </form>
   </div>
@@ -144,22 +145,22 @@
   <div class="container">
     <div class="split">
       <div>
-        <span class="eyebrow">Visit us</span>
+        <span class="eyebrow" data-i18n="ct.visit.eyebrow">Visit us</span>
         <hr class="rule">
-        <h2>Ghat Road, Nagpur</h2>
+        <h2 data-i18n="ct.visit.h2">Ghat Road, Nagpur</h2>
         <ul class="info-list measure">
-          <li><span class="k">Address</span>Manish Steel Traders Pvt. Ltd., 17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
-          <li><span class="k">Phone / WhatsApp</span><a href="tel:+919822221699">+91 98222 21699</a></li>
-          <li><span class="k">Alternate</span><a href="tel:+918380031699">+91 83800 31699</a></li>
-          <li><span class="k">Email</span><a href="mailto:info@manishsteeltraders.com">info@manishsteeltraders.com</a></li>
-          <li><span class="k">Hours</span>Monday to Saturday, 9:00 am &ndash; 6:00 pm. Closed Sunday.</li>
-          <li><span class="k">Payment</span>Cash, UPI, NEFT / RTGS, cheque and DD</li>
-          <li><span class="k">Credit terms</span>Available for established accounts — just ask</li>
-          <li><span class="k">GSTIN</span>27AANCM8559N1ZE</li>
+          <li data-i18n="ct.visit.address"><span class="k">Address</span>Manish Steel Traders Pvt. Ltd., 17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
+          <li><span class="k" data-i18n="ct.visit.phone.k">Phone / WhatsApp</span><a href="tel:+919822221699">+91 98222 21699</a></li>
+          <li><span class="k" data-i18n="ct.visit.alt.k">Alternate</span><a href="tel:+918380031699">+91 83800 31699</a></li>
+          <li><span class="k" data-i18n="ct.visit.email.k">Email</span><a href="mailto:info@manishsteeltraders.com">info@manishsteeltraders.com</a></li>
+          <li data-i18n="ct.visit.hours"><span class="k">Hours</span>Monday to Saturday, 9:00 am &ndash; 6:00 pm. Closed Sunday.</li>
+          <li data-i18n="ct.visit.payment"><span class="k">Payment</span>Cash, UPI, NEFT / RTGS, cheque and DD</li>
+          <li data-i18n="ct.visit.credit"><span class="k">Credit terms</span>Available for established accounts — just ask</li>
+          <li><span class="k" data-i18n="ct.visit.gstin.k">GSTIN</span>27AANCM8559N1ZE</li>
         </ul>
         <div class="btn-row" style="margin-top:22px">
-          <a class="btn" href="tel:+919822221699">Call us</a>
-          <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener">WhatsApp us</a>
+          <a class="btn" href="tel:+919822221699" data-i18n="ct.visit.call">Call us</a>
+          <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" data-i18n="ct.visit.wa">WhatsApp us</a>
         </div>
       </div>
       <div class="split-media">
@@ -177,41 +178,42 @@
       <div>
         <div class="footer-brand">
           <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-          <strong>Manish Steel Traders Pvt. Ltd.</strong>
+          <strong data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</strong>
         </div>
-        <p>Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
+        <p data-i18n="footer.tagline">Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
       </div>
       <div>
-        <h4>Pages</h4>
+        <h4 data-i18n="footer.pages">Pages</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="calculator.html">TMT weight chart</a></li>
-          <li><a href="quality.html">Brands</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="calculator.html" data-i18n="footer.calc">TMT weight chart</a></li>
+          <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="faq.html" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="nav.contact">Contact</h4>
         <ul class="footer-links">
-          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;(Call / WhatsApp)</li>
+          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;<span data-i18n="footer.callwa">(Call / WhatsApp)</span></li>
           <li><a href="tel:+918380031699">+91 83800 31699</a></li>
           <li><a href="mailto:info@manishsteeltraders.com">info@manishsteeltraders.com</a></li>
-          <li>17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
+          <li data-i18n="footer.address">17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> Manish Steel Traders Pvt. Ltd.</span>
+      <span>© <span id="year">2026</span> <span data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</span></span>
       <span>GSTIN 27AANCM8559N1ZE</span>
-      <span>Nagpur, Maharashtra, India</span>
+      <span data-i18n="footer.location">Nagpur, Maharashtra, India</span>
     </div>
   </div>
 </footer>
 
+<script src="assets/js/i18n-hi.js?v=7"></script>
 <script src="assets/js/main.js?v=2"></script>
 <script src="assets/js/enquiry.js"></script>
 </body>
