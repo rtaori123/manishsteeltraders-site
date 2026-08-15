@@ -16,37 +16,39 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=19">
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html">
       <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-      <span><span class="bt">MANISH STEEL TRADERS</span><span class="bs">PVT. LTD.</span></span>
+      <span><span class="bt" data-i18n="brand.header">MANISH STEEL TRADERS</span><span class="bs" data-i18n="brand.suffix">PVT. LTD.</span></span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
       <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a class="active" href="quality.html">Brands</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+      <li><a class="active" href="quality.html" data-i18n="nav.brands">Brands</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       <li><a class="phone" href="tel:+919822221699"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>+91 98222 21699</a></li>
-      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg>WhatsApp</a></li>
+      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg><span data-i18n="nav.whatsapp">WhatsApp</span></a></li>
+      <li class="lang-toggle"><button type="button" data-lang="en" aria-label="English">EN</button><span class="sep">|</span><button type="button" data-lang="hi" aria-label="Hindi">हिं</button></li>
     </ul>
   </div>
 </header>
 
 <section class="page-hero">
   <div class="container">
-    <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Brands</div>
-    <h1>The TMT brands we supply</h1>
-    <p class="lead">National names and mills right here in Vidarbha, so we can match the brand to your project and your budget without dropping below the grade your design needs. Here is what each one is known for.</p>
+    <div class="crumb" data-i18n="br.crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Brands</div>
+    <h1 data-i18n="br.hero.h1">The TMT brands we supply</h1>
+    <p class="lead" data-i18n="br.hero.lead">National names and mills right here in Vidarbha, so we can match the brand to your project and your budget without dropping below the grade your design needs. Here is what each one is known for.</p>
   </div>
 </section>
 
@@ -74,55 +76,55 @@
       <article class="tile brand-card" id="brand-tiger">
         <img class="brand-logo" src="assets/img/brand-tiger.png" alt="SEL Tiger TMT logo" loading="lazy">
         <h3>SEL Tiger TMT</h3>
-        <p>The flagship reinforcement brand of Shyam Metalics, made by a fully integrated ore-to-metal route using German Thermex technology. Bars go through a three-stage quench, self-temper and atmospheric cooling cycle, giving a hard outer surface over a ductile core. Its "Tiger Bond" rib pattern is designed for grip in concrete.</p>
+        <p data-i18n="br.tiger.p">The flagship reinforcement brand of Shyam Metalics, made by a fully integrated ore-to-metal route using German Thermex technology. Bars go through a three-stage quench, self-temper and atmospheric cooling cycle, giving a hard outer surface over a ductile core. Its "Tiger Bond" rib pattern is designed for grip in concrete.</p>
         <p class="specs"><span class="pill">Fe 500D</span><span class="pill">Fe 550D</span><span class="pill">Thermex</span></p>
-        <a class="more" href="https://www.seltigertmt.com/" target="_blank" rel="noopener">Visit the official SEL Tiger website &#8599;</a>
+        <a class="more" href="https://www.seltigertmt.com/" target="_blank" rel="noopener" data-i18n="br.tiger.more">Visit the official SEL Tiger website &#8599;</a>
       </article>
 
       <article class="tile brand-card" id="brand-kamdhenu">
         <img class="brand-logo" src="assets/img/brand-kamdhenu.webp" alt="Kamdhenu logo" loading="lazy">
         <h3>Kamdhenu</h3>
-        <p>One of the largest reinforcement bar brands in the country and among the most widely specified by name. BIS and ISO certified to IS&nbsp;1786 across its grade range, with low sulphur and phosphorus content for weldability and ductility. If your consultant has written a brand into the drawing, it is often this one.</p>
+        <p data-i18n="br.kamdhenu.p">One of the largest reinforcement bar brands in the country and among the most widely specified by name. BIS and ISO certified to IS&nbsp;1786 across its grade range, with low sulphur and phosphorus content for weldability and ductility. If your consultant has written a brand into the drawing, it is often this one.</p>
         <p class="specs"><span class="pill">Fe 500</span><span class="pill">Fe 500D</span><span class="pill">Fe 550</span><span class="pill">Fe 550D</span></p>
-        <a class="more" href="https://www.kamdhenulimited.com/" target="_blank" rel="noopener">Visit the official Kamdhenu website &#8599;</a>
+        <a class="more" href="https://www.kamdhenulimited.com/" target="_blank" rel="noopener" data-i18n="br.kamdhenu.more">Visit the official Kamdhenu website &#8599;</a>
       </article>
 
       <article class="tile brand-card" id="brand-sangam">
         <img class="brand-logo" src="assets/img/brand-sangam.webp" alt="Sangam Steel logo" loading="lazy">
         <h3>Sangam Steel</h3>
-        <p>Their Vidarbha regional mill is an integrated plant at Wardha, a short haul from Nagpur, and the leading reinforcement producer in the region. Runs the licensed Thermex process from H&amp;K GmbH, Germany, is BIS (ISI) registered to IS&nbsp;1786-2008, and holds ISO&nbsp;9001 and ISO&nbsp;14001. Rolls the full range of common sizes, and being close by it replenishes quickly.</p>
-        <p class="specs"><span class="pill">Fe 500</span><span class="pill">Fe 550</span><span class="pill">Fe 550D</span><span class="pill">Made in Vidarbha</span></p>
-        <a class="more" href="https://www.sangamsteel.in/" target="_blank" rel="noopener">Visit the official Sangam Steel website &#8599;</a>
+        <p data-i18n="br.sangam.p">Their Vidarbha regional mill is an integrated plant at Wardha, a short haul from Nagpur, and the leading reinforcement producer in the region. Runs the licensed Thermex process from H&amp;K GmbH, Germany, is BIS (ISI) registered to IS&nbsp;1786-2008, and holds ISO&nbsp;9001 and ISO&nbsp;14001. Rolls the full range of common sizes, and being close by it replenishes quickly.</p>
+        <p class="specs"><span class="pill">Fe 500</span><span class="pill">Fe 550</span><span class="pill">Fe 550D</span><span class="pill" data-i18n="br.sangam.pill.vidarbha">Made in Vidarbha</span></p>
+        <a class="more" href="https://www.sangamsteel.in/" target="_blank" rel="noopener" data-i18n="br.sangam.more">Visit the official Sangam Steel website &#8599;</a>
       </article>
 
       <article class="tile brand-card" id="brand-sky">
         <img class="brand-logo" src="assets/img/brand-sky.jpg" alt="Sky TMT logo" loading="lazy">
         <h3>Sky TMT</h3>
-        <p>From Sky Alloys and Power Limited, an integrated producer at Raigarh in Chhattisgarh is one of the mills we buy from direct. Integrated means they run the whole chain themselves, from sponge iron through billets to the finished bar, so the steel is controlled from raw material rather than bought in part-made. Being on our sourcing route, it is also one of the lines we can replenish quickest.</p>
-        <p class="specs"><span class="pill">Raigarh, Chhattisgarh</span><span class="pill">Integrated mill</span><span class="pill">Direct from source</span></p>
-        <a class="more" href="https://skyalloys.co.in/" target="_blank" rel="noopener">Visit Sky Alloys &amp; Power, the maker of Sky TMT &#8599;</a>
+        <p data-i18n="br.sky.p">From Sky Alloys and Power Limited, an integrated producer at Raigarh in Chhattisgarh is one of the mills we buy from direct. Integrated means they run the whole chain themselves, from sponge iron through billets to the finished bar, so the steel is controlled from raw material rather than bought in part-made. Being on our sourcing route, it is also one of the lines we can replenish quickest.</p>
+        <p class="specs"><span class="pill" data-i18n="br.sky.pill.raigarh">Raigarh, Chhattisgarh</span><span class="pill" data-i18n="br.sky.pill.integrated">Integrated mill</span><span class="pill" data-i18n="br.sky.pill.direct">Direct from source</span></p>
+        <a class="more" href="https://skyalloys.co.in/" target="_blank" rel="noopener" data-i18n="br.sky.more">Visit Sky Alloys &amp; Power, the maker of Sky TMT &#8599;</a>
       </article>
 
       <article class="tile brand-card" id="brand-lodha">
         <img class="brand-logo" src="assets/img/brand-lodha.jpg" alt="Lodha Gold TMT logo" loading="lazy">
         <h3>Lodha Gold TMT</h3>
-        <p>A local brand rolled at the Lodha plant on Umred Road, right here in Nagpur. Because we keep it in our own yard, we can supply it fast and in any quantity, from a few bundles for a repair to a full truck for a slab. For routine Nagpur work where the drawing doesn't name a national brand, it is often the practical pick.</p>
-        <p class="specs"><span class="pill">Fe 500</span><span class="pill">Made in Nagpur</span><span class="pill">In our yard</span></p>
+        <p data-i18n="br.lodha.p">A local brand rolled at the Lodha plant on Umred Road, right here in Nagpur. Because we keep it in our own yard, we can supply it fast and in any quantity, from a few bundles for a repair to a full truck for a slab. For routine Nagpur work where the drawing doesn't name a national brand, it is often the practical pick.</p>
+        <p class="specs"><span class="pill">Fe 500</span><span class="pill" data-i18n="br.lodha.pill.nagpur">Made in Nagpur</span><span class="pill" data-i18n="br.lodha.pill.yard">In our yard</span></p>
       </article>
 
       <article class="tile brand-card" id="brand-nr">
         <img class="brand-logo" src="assets/img/brand-nr.png" alt="NR TMT logo" loading="lazy">
         <h3>NR TMT</h3>
-        <p>Rolled in the Raigarh steel belt of Chhattisgarh and stocked in the common construction sizes. A practical option for keeping a project's steel budget in check on routine work. Tell us the size and quantity, and we will quote it against the alternatives so you can decide.</p>
-        <p class="specs"><span class="pill">Raigarh, Chhattisgarh</span><span class="pill">Common sizes</span></p>
+        <p data-i18n="br.nr.p">Rolled in the Raigarh steel belt of Chhattisgarh and stocked in the common construction sizes. A practical option for keeping a project's steel budget in check on routine work. Tell us the size and quantity, and we will quote it against the alternatives so you can decide.</p>
+        <p class="specs"><span class="pill" data-i18n="br.nr.pill.raigarh">Raigarh, Chhattisgarh</span><span class="pill" data-i18n="br.nr.pill.common">Common sizes</span></p>
       </article>
 
     </div>
 
-    <p class="measure" style="margin-top:30px">Different projects run to different budgets. Carrying a range means we can match the brand to what your project can carry without dropping below the grade your design calls for and if you want something we don't list, we can usually source it.</p>
+    <p class="measure" style="margin-top:30px" data-i18n="br.brands.measure">Different projects run to different budgets. Carrying a range means we can match the brand to what your project can carry without dropping below the grade your design calls for and if you want something we don't list, we can usually source it.</p>
     <div class="btn-row" style="margin-top:22px">
-      <a class="btn" href="tel:+919822221699">Ask what's in stock</a>
-      <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20which%20TMT%20brands%20do%20you%20have%20in%20stock%3F%20I%20need%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener">Ask on WhatsApp</a>
+      <a class="btn" href="tel:+919822221699" data-i18n="br.brands.stock">Ask what's in stock</a>
+      <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20which%20TMT%20brands%20do%20you%20have%20in%20stock%3F%20I%20need%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener" data-i18n="br.brands.wa">Ask on WhatsApp</a>
     </div>
   </div>
 </section>
@@ -131,19 +133,19 @@
 <section class="section band">
   <div class="container">
     <div class="head">
-      <span class="eyebrow">What we assure</span>
+      <span class="eyebrow" data-i18n="br.assure.eyebrow">What we assure</span>
       <hr class="rule">
-      <h2>How we keep quality dependable</h2>
+      <h2 data-i18n="br.assure.h2">How we keep quality dependable</h2>
     </div>
     <div class="grid grid-2" style="margin-top:28px; gap:0 60px">
       <ul class="list">
-        <li><strong>Genuine material, never duplicate.</strong> A branded bar is that brand, sourced from the mill. We do not deal in look-alike material, whatever the margin on it.</li>
-        <li><strong>ISI-marked, IS&nbsp;1786 grades.</strong> Our branded TMT conforms to the Bureau of Indian Standards (Fe500 / Fe500D / Fe550D). Ask and we will confirm the marking for the brand you are quoted.</li>
-        <li><strong>Correct grade and size, every order.</strong> Supplied exactly as your design calls for, and checked before it leaves the yard.</li>
+        <li data-i18n="br.assure.li1"><strong>Genuine material, never duplicate.</strong> A branded bar is that brand, sourced from the mill. We do not deal in look-alike material, whatever the margin on it.</li>
+        <li data-i18n="br.assure.li2"><strong>ISI-marked, IS&nbsp;1786 grades.</strong> Our branded TMT conforms to the Bureau of Indian Standards (Fe500 / Fe500D / Fe550D). Ask and we will confirm the marking for the brand you are quoted.</li>
+        <li data-i18n="br.assure.li3"><strong>Correct grade and size, every order.</strong> Supplied exactly as your design calls for, and checked before it leaves the yard.</li>
       </ul>
       <ul class="list">
-        <li><strong>Mill test certificates on request.</strong> The paperwork comes with the material whenever you need it.</li>
-        <li><strong>Stand-behind service.</strong> If something is not right, we make it right. That is why accounts stay with us for decades.</li>
+        <li data-i18n="br.assure.li4"><strong>Mill test certificates on request.</strong> The paperwork comes with the material whenever you need it.</li>
+        <li data-i18n="br.assure.li5"><strong>Stand-behind service.</strong> If something is not right, we make it right. That is why accounts stay with us for decades.</li>
       </ul>
     </div>
   </div>
@@ -156,12 +158,12 @@
   <div class="container">
     <div class="split">
       <div>
-        <span class="eyebrow">Sourcing</span>
+        <span class="eyebrow" data-i18n="br.source.eyebrow">Sourcing</span>
         <hr class="rule">
-        <h2>Where our steel comes from</h2>
-        <p class="measure">We source from established mills across the country's main reinforcement belts — Shyam Metalics in the east for SEL Tiger, the integrated mills around <strong>Raigarh in Chhattisgarh</strong> for brands like Sky and NR, and plants right here in Vidarbha such as Sangam at Wardha and Lodha in Nagpur. Buying close to the source keeps the chain short, and it means we know which mill a batch came off.</p>
-        <p class="measure">Material is then held in our own yard on Ghat Road, so what we quote is what we can actually deliver — not stock we still have to go and find. Within Nagpur that means same-day delivery to your site.</p>
-        <p class="measure">Before anything is dispatched we check the grade and the size against what you ordered, and mill test certificates come with the material on request. If something isn't right, we make it right.</p>
+        <h2 data-i18n="br.source.h2">Where our steel comes from</h2>
+        <p class="measure" data-i18n="br.source.p1">We source from established mills across the country's main reinforcement belts — Shyam Metalics in the east for SEL Tiger, the integrated mills around <strong>Raigarh in Chhattisgarh</strong> for brands like Sky and NR, and plants right here in Vidarbha such as Sangam at Wardha and Lodha in Nagpur. Buying close to the source keeps the chain short, and it means we know which mill a batch came off.</p>
+        <p class="measure" data-i18n="br.source.p2">Material is then held in our own yard on Ghat Road, so what we quote is what we can actually deliver — not stock we still have to go and find. Within Nagpur that means same-day delivery to your site.</p>
+        <p class="measure" data-i18n="br.source.p3">Before anything is dispatched we check the grade and the size against what you ordered, and mill test certificates come with the material on request. If something isn't right, we make it right.</p>
       </div>
       <div class="split-media">
         <img class="photo" src="assets/img/about-yard.jpg" alt="Steel reinforcement being handled at the yard" loading="lazy">
@@ -173,56 +175,58 @@
 <!-- CTA -->
 <section class="section band strip">
   <div class="container">
-    <h2>Questions about grades or specifications?</h2>
-    <p class="lead">Tell us your requirement and we'll confirm exactly what we can supply.</p>
+    <h2 data-i18n="br.cta.h2">Questions about grades or specifications?</h2>
+    <p class="lead" data-i18n="br.cta.lead">Tell us your requirement and we'll confirm exactly what we can supply.</p>
     <div class="btn-row" style="justify-content:center">
-      <a class="btn" href="tel:+919822221699">Call us</a>
-      <a class="btn btn--outline" href="contact.html">Contact us</a>
+      <a class="btn" href="tel:+919822221699" data-i18n="br.cta.call">Call us</a>
+      <a class="btn btn--outline" href="contact.html" data-i18n="br.cta.contact">Contact us</a>
     </div>
   </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
           <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-          <strong>Manish Steel Traders Pvt. Ltd.</strong>
+          <strong data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</strong>
         </div>
-        <p>Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
+        <p data-i18n="footer.tagline">Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
       </div>
       <div>
-        <h4>Pages</h4>
+        <h4 data-i18n="footer.pages">Pages</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="calculator.html">TMT weight chart</a></li>
-          <li><a href="quality.html">Brands</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="calculator.html" data-i18n="footer.calc">TMT weight chart</a></li>
+          <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="faq.html" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="nav.contact">Contact</h4>
         <ul class="footer-links">
-          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;(Call / WhatsApp)</li>
+          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;<span data-i18n="footer.callwa">(Call / WhatsApp)</span></li>
           <li><a href="tel:+918380031699">+91 83800 31699</a></li>
           <li><a href="mailto:info@manishsteeltraders.com">info@manishsteeltraders.com</a></li>
-          <li>17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
+          <li data-i18n="footer.address">17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> Manish Steel Traders Pvt. Ltd.</span>
+      <span>© <span id="year">2026</span> <span data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</span></span>
       <span>GSTIN 27AANCM8559N1ZE</span>
-      <span>Nagpur, Maharashtra, India</span>
+      <span data-i18n="footer.location">Nagpur, Maharashtra, India</span>
     </div>
   </div>
 </footer>
 
+<script src="assets/js/i18n-hi.js?v=7"></script>
 <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

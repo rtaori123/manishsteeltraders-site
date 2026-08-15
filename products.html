@@ -16,7 +16,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=19">
 <style>
   /* Speciality product cards (Products page). Two equal cards, image on top at a
@@ -45,28 +45,29 @@
   <div class="container nav">
     <a class="brand" href="index.html">
       <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-      <span><span class="bt">MANISH STEEL TRADERS</span><span class="bs">PVT. LTD.</span></span>
+      <span><span class="bt" data-i18n="brand.header">MANISH STEEL TRADERS</span><span class="bs" data-i18n="brand.suffix">PVT. LTD.</span></span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
       <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="products.html">Products</a></li>
-      <li><a href="quality.html">Brands</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a class="active" href="products.html" data-i18n="nav.products">Products</a></li>
+      <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       <li><a class="phone" href="tel:+919822221699"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>+91 98222 21699</a></li>
-      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg>WhatsApp</a></li>
+      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg><span data-i18n="nav.whatsapp">WhatsApp</span></a></li>
+      <li class="lang-toggle"><button type="button" data-lang="en" aria-label="English">EN</button><span class="sep">|</span><button type="button" data-lang="hi" aria-label="Hindi">हिं</button></li>
     </ul>
   </div>
 </header>
 
 <section class="page-hero">
   <div class="container">
-    <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Products</div>
-    <h1>Products</h1>
-    <p class="lead">The steel we supply for construction across Nagpur and Vidarbha are <b>TMT reinforcement bars and binding wire</b> from our own yard, with structural sections and the wider range sourced to order and delivered to site.</p>
+    <div class="crumb" data-i18n="pr.crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Products</div>
+    <h1 data-i18n="pr.hero.h1">Products</h1>
+    <p class="lead" data-i18n="pr.hero.lead">The steel we supply for construction across Nagpur and Vidarbha are <b>TMT reinforcement bars and binding wire</b> from our own yard, with structural sections and the wider range sourced to order and delivered to site.</p>
   </div>
 </section>
 
@@ -79,19 +80,19 @@
      Deeper TMT specs (the grade table) now live on faq.html. -->
 <section class="section" id="speciality">
   <div class="container">
-    <div class="sec-head"><h2>Our Speciality</h2></div>
-    <p class="center lead" style="margin:0 auto 36px">TMT reinforcement bars and binding wire are what we keep ready to load in our own yard. These are the two lines we supply day in, day out, delivered same day within Nagpur.</p>
+    <div class="sec-head"><h2 data-i18n="pr.spec.h2">Our Speciality</h2></div>
+    <p class="center lead" style="margin:0 auto 36px" data-i18n="pr.spec.intro">TMT reinforcement bars and binding wire are what we keep ready to load in our own yard. These are the two lines we supply day in, day out, delivered same day within Nagpur.</p>
     <div class="feature-grid">
 
       <article class="feature-card" id="tmt">
         <img class="feature-img" src="assets/img/product-tmt.jpg?v=2" alt="Ribbed TMT reinforcement bars, straight lengths and coils" loading="lazy">
         <div class="feature-body">
-          <h3>TMT reinforcement bars</h3>
-          <p>Thermo-mechanically treated bars for slabs, columns, beams and footings — the core of what we do. We keep the full range in the yard, in the sizes and grades your design calls for (8&ndash;32&nbsp;mm; Fe&nbsp;500, Fe&nbsp;500D and Fe&nbsp;550D to IS&nbsp;1786), each quality-checked before dispatch. Not sure which grade or how much you need? Send your requirement and we'll confirm what fits.</p>
-          <p class="feature-note">Working out quantities? Our <a href="calculator.html">TMT weight chart</a> gives kg per metre, per bar and bars per tonne.</p>
+          <h3 data-i18n="pr.tmt.h3">TMT reinforcement bars</h3>
+          <p data-i18n="pr.tmt.p1">Thermo-mechanically treated bars for slabs, columns, beams and footings — the core of what we do. We keep the full range in the yard, in the sizes and grades your design calls for (8&ndash;32&nbsp;mm; Fe&nbsp;500, Fe&nbsp;500D and Fe&nbsp;550D to IS&nbsp;1786), each quality-checked before dispatch. Not sure which grade or how much you need? Send your requirement and we'll confirm what fits.</p>
+          <p class="feature-note" data-i18n="pr.tmt.note">Working out quantities? Our <a href="calculator.html">TMT weight chart</a> gives kg per metre, per bar and bars per tonne.</p>
           <div class="btn-row">
-            <a class="btn" href="tel:+919822221699">Call for rates</a>
-            <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20TMT%20bars%20(size%20%2F%20grade%20%2F%20quantity)." target="_blank" rel="noopener">WhatsApp a requirement</a>
+            <a class="btn" href="tel:+919822221699" data-i18n="pr.tmt.call">Call for rates</a>
+            <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20TMT%20bars%20(size%20%2F%20grade%20%2F%20quantity)." target="_blank" rel="noopener" data-i18n="pr.tmt.wa">WhatsApp a requirement</a>
           </div>
         </div>
       </article>
@@ -99,10 +100,10 @@
       <article class="feature-card" id="binding-wire">
         <img class="feature-img" src="assets/img/product-wires.jpg?v=2" alt="Coils of steel binding wire" loading="lazy">
         <div class="feature-body">
-          <h3>Binding wire</h3>
-          <p>Soft-annealed steel wire for tying reinforcement steady before the pour. We keep it in the yard alongside the bars, so it loads onto the same delivery — no second trip and no chasing it down separately. Tell us the quantity and we'll supply the gauge to suit.</p>
+          <h3 data-i18n="pr.wire.h3">Binding wire</h3>
+          <p data-i18n="pr.wire.p">Soft-annealed steel wire for tying reinforcement steady before the pour. We keep it in the yard alongside the bars, so it loads onto the same delivery — no second trip and no chasing it down separately. Tell us the quantity and we'll supply the gauge to suit.</p>
           <div class="btn-row">
-            <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20please%20add%20binding%20wire%20to%20my%20order.%20Quantity%3A" target="_blank" rel="noopener">Add binding wire to your order</a>
+            <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20please%20add%20binding%20wire%20to%20my%20order.%20Quantity%3A" target="_blank" rel="noopener" data-i18n="pr.wire.wa">Add binding wire to your order</a>
           </div>
         </div>
       </article>
@@ -114,44 +115,44 @@
 <!-- ================= SOURCED TO ORDER ================= -->
 <section class="section band">
   <div class="container">
-    <div class="sec-head"><h2>Sourced to order</h2></div>
-    <p class="center lead" style="margin:0 auto 34px">Structural sections and the wider steel range we bring in against your sizes and quantity, with a delivery timeline confirmed when we quote.</p>
+    <div class="sec-head"><h2 data-i18n="pr.sourced.h2">Sourced to order</h2></div>
+    <p class="center lead" style="margin:0 auto 34px" data-i18n="pr.sourced.intro">Structural sections and the wider steel range we bring in against your sizes and quantity, with a delivery timeline confirmed when we quote.</p>
     <div class="grid grid-3">
 
       <article class="tile" id="angles">
         <img class="tile-img" src="assets/img/product-angles.jpg" alt="Steel angles and channels" loading="lazy">
-        <h3>Angles &amp; channels</h3>
-        <p>MS angles and channels in the common construction sizes, for framing, fabrication and general structural work.</p>
+        <h3 data-i18n="pr.angles.h3">Angles &amp; channels</h3>
+        <p data-i18n="pr.angles.p">MS angles and channels in the common construction sizes, for framing, fabrication and general structural work.</p>
       </article>
 
       <article class="tile" id="rounds">
         <img class="tile-img" src="assets/img/product-round.jpg" alt="Round and square steel bars" loading="lazy">
-        <h3>Rounds &amp; square bars</h3>
-        <p>MS round and square bars for fabrication, grilles, gates and general site work, in the usual sizes.</p>
+        <h3 data-i18n="pr.rounds.h3">Rounds &amp; square bars</h3>
+        <p data-i18n="pr.rounds.p">MS round and square bars for fabrication, grilles, gates and general site work, in the usual sizes.</p>
       </article>
 
       <article class="tile" id="plates">
         <img class="tile-img" src="assets/img/product-plates.jpg" alt="Steel flats, sheets and plates" loading="lazy">
-        <h3>Plates &amp; sheets</h3>
-        <p>MS flats, sheets and plates for fabrication and structural work, to your thickness and size.</p>
+        <h3 data-i18n="pr.plates.h3">Plates &amp; sheets</h3>
+        <p data-i18n="pr.plates.p">MS flats, sheets and plates for fabrication and structural work, to your thickness and size.</p>
       </article>
 
       <article class="tile" id="pipes">
         <img class="tile-img" src="assets/img/product-pipes.jpg" alt="Steel pipes and tubes" loading="lazy">
-        <h3>Pipes &amp; tubes</h3>
-        <p>MS pipes and tubes for structural and general use — tell us the diameter, gauge and quantity.</p>
+        <h3 data-i18n="pr.pipes.h3">Pipes &amp; tubes</h3>
+        <p data-i18n="pr.pipes.p">MS pipes and tubes for structural and general use — tell us the diameter, gauge and quantity.</p>
       </article>
 
       <article class="tile" id="beams">
         <img class="tile-img" src="assets/img/product-structural.jpg" alt="Structural steel beams and joists" loading="lazy">
-        <h3>Beams &amp; joists</h3>
-        <p>Structural beams and joists for spans, sourced to specification for your fabrication and site work.</p>
+        <h3 data-i18n="pr.beams.h3">Beams &amp; joists</h3>
+        <p data-i18n="pr.beams.p">Structural beams and joists for spans, sourced to specification for your fabrication and site work.</p>
       </article>
 
       <article class="tile" style="display:flex; flex-direction:column; justify-content:center; align-items:flex-start; background:var(--navy); color:var(--on-dark); border-color:var(--navy)">
-        <h3 style="color:#fff">Something else?</h3>
-        <p style="color:var(--on-dark-mut)">If you buy it for a construction site, we can usually source it. Tell us what you need and we'll come back with a rate.</p>
-        <a class="btn btn--wa" style="margin-top:16px" href="https://wa.me/919822221699?text=Hi%2C%20do%20you%20supply%20the%20following%3F%20" target="_blank" rel="noopener">Ask if we source it</a>
+        <h3 style="color:#fff" data-i18n="pr.else.h3">Something else?</h3>
+        <p style="color:var(--on-dark-mut)" data-i18n="pr.else.p">If you buy it for a construction site, we can usually source it. Tell us what you need and we'll come back with a rate.</p>
+        <a class="btn btn--wa" style="margin-top:16px" href="https://wa.me/919822221699?text=Hi%2C%20do%20you%20supply%20the%20following%3F%20" target="_blank" rel="noopener" data-i18n="pr.else.cta">Ask if we source it</a>
       </article>
 
     </div>
@@ -161,11 +162,11 @@
 <!-- ================= QUOTE STRIP ================= -->
 <section class="section">
   <div class="container strip">
-    <h2>Tell us your requirement</h2>
-    <p class="lead">Share sizes, grades and quantity — we'll send a competitive rate.</p>
+    <h2 data-i18n="pr.quote.h2">Tell us your requirement</h2>
+    <p class="lead" data-i18n="pr.quote.p">Share sizes, grades and quantity — we'll send a competitive rate.</p>
     <div class="btn-row">
-      <a class="btn" href="tel:+919822221699">Call +91 98222 21699</a>
-      <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20my%20requirement%20is%3A" target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="btn" href="tel:+919822221699" data-i18n="pr.quote.call">Call +91 98222 21699</a>
+      <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20my%20requirement%20is%3A" target="_blank" rel="noopener" data-i18n="pr.quote.wa">WhatsApp us</a>
     </div>
   </div>
 </section>
@@ -176,41 +177,42 @@
       <div>
         <div class="footer-brand">
           <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-          <strong>Manish Steel Traders Pvt. Ltd.</strong>
+          <strong data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</strong>
         </div>
-        <p>Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
+        <p data-i18n="footer.tagline">Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
       </div>
       <div>
-        <h4>Pages</h4>
+        <h4 data-i18n="footer.pages">Pages</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="calculator.html">TMT weight chart</a></li>
-          <li><a href="quality.html">Brands</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="calculator.html" data-i18n="footer.calc">TMT weight chart</a></li>
+          <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="faq.html" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="nav.contact">Contact</h4>
         <ul class="footer-links">
-          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;(Call / WhatsApp)</li>
+          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;<span data-i18n="footer.callwa">(Call / WhatsApp)</span></li>
           <li><a href="tel:+918380031699">+91 83800 31699</a></li>
           <li><a href="mailto:info@manishsteeltraders.com">info@manishsteeltraders.com</a></li>
-          <li>17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
+          <li data-i18n="footer.address">17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> Manish Steel Traders Pvt. Ltd.</span>
+      <span>© <span id="year">2026</span> <span data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</span></span>
       <span>GSTIN 27AANCM8559N1ZE</span>
-      <span>Nagpur, Maharashtra, India</span>
+      <span data-i18n="footer.location">Nagpur, Maharashtra, India</span>
     </div>
   </div>
 </footer>
 
+<script src="assets/js/i18n-hi.js?v=7"></script>
 <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>

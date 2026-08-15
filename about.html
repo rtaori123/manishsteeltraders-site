@@ -16,7 +16,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=19">
 </head>
 <body>
@@ -25,28 +25,29 @@
   <div class="container nav">
     <a class="brand" href="index.html">
       <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-      <span><span class="bt">MANISH STEEL TRADERS</span><span class="bs">PVT. LTD.</span></span>
+      <span><span class="bt" data-i18n="brand.header">MANISH STEEL TRADERS</span><span class="bs" data-i18n="brand.suffix">PVT. LTD.</span></span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
       <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="quality.html">Brands</a></li>
-      <li><a class="active" href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+      <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+      <li><a class="active" href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       <li><a class="phone" href="tel:+919822221699"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>+91 98222 21699</a></li>
-      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg>WhatsApp</a></li>
+      <li><a class="wa-head" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20steel.%20My%20requirement%20is%3A%20(size%20%2F%20grade%20%2F%20quantity)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.3 4.8 4.92-1.29A9.9 9.9 0 1 0 12.04 2m-2.3 5.2c.15 0 .37-.06.55.36.22.48.69 1.7.75 1.82.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.61-.72.77-.96.16-.24.33-.2.55-.12.22.08 1.43.68 1.67.8.24.12.4.18.46.28.06.11.06.59-.14 1.16-.21.57-1.21 1.12-1.66 1.16-.45.04-.87.21-2.93-.62-2.49-1-4.07-3.54-4.19-3.7-.12-.16-.99-1.31-.99-2.51 0-1.19.63-1.78.85-2.02.22-.24.48-.3.64-.3z"/></svg><span data-i18n="nav.whatsapp">WhatsApp</span></a></li>
+      <li class="lang-toggle"><button type="button" data-lang="en" aria-label="English">EN</button><span class="sep">|</span><button type="button" data-lang="hi" aria-label="Hindi">हिं</button></li>
     </ul>
   </div>
 </header>
 
 <section class="page-hero">
   <div class="container">
-    <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; About</div>
-    <h1>About us</h1>
-    <p class="lead">A family-run steel distributor, stockist and retailer in Nagpur — supplying the Vidarbha region since 1995.</p>
+    <div class="crumb" data-i18n="ab.crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; About</div>
+    <h1 data-i18n="ab.hero.h1">About us</h1>
+    <p class="lead" data-i18n="ab.hero.lead">A family-run steel distributor, stockist and retailer in Nagpur — supplying the Vidarbha region since 1995.</p>
   </div>
 </section>
 
@@ -55,13 +56,13 @@
   <div class="container">
     <div class="split">
       <div>
-        <span class="eyebrow">Our story</span>
+        <span class="eyebrow" data-i18n="ab.story.eyebrow">Our story</span>
         <hr class="rule">
-        <h2>Started in 1995, family-run ever since</h2>
-        <p>Manish Steel Traders began in 1995 and has stayed what it started as — a family-run business, based on Ghat Road, Nagpur.</p>
-        <p>We are steel traders and suppliers. From here we have supplied the Vidarbha region for over 30 years, serving mainly the Nagpur metropolitan area: developers, builders, hardware retailers, contractors and engineers.</p>
-        <p>The promise has stayed the same throughout: dependable supply, honest pricing, and material you can build on — order after order. We are keen to keep expanding further across the region.</p>
-        <p>The business is led today by <strong>Manish Taori, Director</strong>, carrying forward the values of quality and trust that built our name.</p>
+        <h2 data-i18n="ab.story.h2">Started in 1995, family-run ever since</h2>
+        <p data-i18n="ab.story.p1">Manish Steel Traders began in 1995 and has stayed what it started as — a family-run business, based on Ghat Road, Nagpur.</p>
+        <p data-i18n="ab.story.p2">We are steel traders and suppliers. From here we have supplied the Vidarbha region for over 30 years, serving mainly the Nagpur metropolitan area: developers, builders, hardware retailers, contractors and engineers.</p>
+        <p data-i18n="ab.story.p3">The promise has stayed the same throughout: dependable supply, honest pricing, and material you can build on — order after order. We are keen to keep expanding further across the region.</p>
+        <p data-i18n="ab.story.p4">The business is led today by <strong>Manish Taori, Director</strong>, carrying forward the values of quality and trust that built our name.</p>
       </div>
       <div class="split-media">
         <img class="photo photo--tall" src="assets/img/about-yard.jpg" alt="Workers assembling steel reinforcement" loading="lazy">
@@ -81,12 +82,12 @@
          <div class="split-media"><img class="photo photo--tall" src="assets/img/director.jpg"
          alt="Manish Taori, Director, Manish Steel Traders"></div> -->
     <div class="head">
-      <span class="eyebrow">Leadership</span>
+      <span class="eyebrow" data-i18n="ab.lead.eyebrow">Leadership</span>
       <hr class="rule">
-      <h2>Led by Manish Taori</h2>
-      <p class="measure">The business is led by <strong>Manish Taori, Director</strong>, carrying forward more than 30 years of relationships and the same commitment to quality, fair dealing and dependable supply that built the firm's name.</p>
-      <p class="measure">For builders who value a supplier they can reach directly, that personal accountability is the point.</p>
-      <p style="margin-top:1.2rem"><strong>Manish Taori</strong><br><span style="color:var(--muted)">Director, Manish Steel Traders Pvt. Ltd.</span></p>
+      <h2 data-i18n="ab.lead.h2">Led by Manish Taori</h2>
+      <p class="measure" data-i18n="ab.lead.p1">The business is led by <strong>Manish Taori, Director</strong>, carrying forward more than 30 years of relationships and the same commitment to quality, fair dealing and dependable supply that built the firm's name.</p>
+      <p class="measure" data-i18n="ab.lead.p2">For builders who value a supplier they can reach directly, that personal accountability is the point.</p>
+      <p style="margin-top:1.2rem" data-i18n="ab.lead.p3"><strong>Manish Taori</strong><br><span style="color:var(--muted)">Director, Manish Steel Traders Pvt. Ltd.</span></p>
     </div>
   </div>
 </section>
@@ -95,18 +96,18 @@
 <section class="section band">
   <div class="container">
     <div class="head">
-      <span class="eyebrow">What we stand for</span>
+      <span class="eyebrow" data-i18n="ab.values.eyebrow">What we stand for</span>
       <hr class="rule">
-      <h2>How we work</h2>
+      <h2 data-i18n="ab.values.h2">How we work</h2>
     </div>
     <div class="grid grid-2" style="margin-top:30px; gap:0 60px">
       <ul class="list">
-        <li><strong>Reliability</strong> — uninterrupted supply you can plan your schedule around.</li>
-        <li><strong>Consistent quality</strong> — quality-checked material, batch after batch.</li>
+        <li data-i18n="ab.values.li1"><strong>Reliability</strong> — uninterrupted supply you can plan your schedule around.</li>
+        <li data-i18n="ab.values.li2"><strong>Consistent quality</strong> — quality-checked material, batch after batch.</li>
       </ul>
       <ul class="list">
-        <li><strong>Timely delivery</strong> — to your site across Nagpur and Vidarbha.</li>
-        <li><strong>Fair, transparent pricing</strong> — straightforward rates and responsive service.</li>
+        <li data-i18n="ab.values.li3"><strong>Timely delivery</strong> — to your site across Nagpur and Vidarbha.</li>
+        <li data-i18n="ab.values.li4"><strong>Fair, transparent pricing</strong> — straightforward rates and responsive service.</li>
       </ul>
     </div>
   </div>
@@ -116,14 +117,14 @@
 <section class="section">
   <div class="container">
     <div class="head">
-      <span class="eyebrow">Working with us</span>
+      <span class="eyebrow" data-i18n="ab.how.eyebrow">Working with us</span>
       <hr class="rule">
-      <h2>Simple to order</h2>
+      <h2 data-i18n="ab.how.h2">Simple to order</h2>
     </div>
     <div class="grid grid-3" style="margin-top:30px">
-      <div class="tile"><h3>1 · Enquire</h3><p>Call or WhatsApp with your requirement — sizes, grades and quantity.</p></div>
-      <div class="tile"><h3>2 · Quote</h3><p>We share a competitive, transparent quote so you can compare and decide.</p></div>
-      <div class="tile"><h3>3 · Delivered</h3><p>Confirm the order and we deliver quality material to your site, on time.</p></div>
+      <div class="tile"><h3 data-i18n="ab.how.t1.h3">1 · Enquire</h3><p data-i18n="ab.how.t1.p">Call or WhatsApp with your requirement — sizes, grades and quantity.</p></div>
+      <div class="tile"><h3 data-i18n="ab.how.t2.h3">2 · Quote</h3><p data-i18n="ab.how.t2.p">We share a competitive, transparent quote so you can compare and decide.</p></div>
+      <div class="tile"><h3 data-i18n="ab.how.t3.h3">3 · Delivered</h3><p data-i18n="ab.how.t3.p">Confirm the order and we deliver quality material to your site, on time.</p></div>
     </div>
   </div>
 </section>
@@ -131,11 +132,11 @@
 <!-- service area / CTA -->
 <section class="section band">
   <div class="container strip">
-    <h2>Serving the Vidarbha region and beyond</h2>
-    <p class="lead">Whether you already have a supplier or are starting a new project, we'd be glad to share a competitive quote.</p>
+    <h2 data-i18n="ab.cta.h2">Serving the Vidarbha region and beyond</h2>
+    <p class="lead" data-i18n="ab.cta.lead">Whether you already have a supplier or are starting a new project, we'd be glad to share a competitive quote.</p>
     <div class="btn-row">
-      <a class="btn" href="tel:+919822221699">Call us</a>
-      <a class="btn btn--outline" href="contact.html">Contact us</a>
+      <a class="btn" href="tel:+919822221699" data-i18n="ab.cta.call">Call us</a>
+      <a class="btn btn--outline" href="contact.html" data-i18n="ab.cta.contact">Contact us</a>
     </div>
   </div>
 </section>
@@ -146,41 +147,42 @@
       <div>
         <div class="footer-brand">
           <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
-          <strong>Manish Steel Traders Pvt. Ltd.</strong>
+          <strong data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</strong>
         </div>
-        <p>Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
+        <p data-i18n="footer.tagline">Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
       </div>
       <div>
-        <h4>Pages</h4>
+        <h4 data-i18n="footer.pages">Pages</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="calculator.html">TMT weight chart</a></li>
-          <li><a href="quality.html">Brands</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li><a href="calculator.html" data-i18n="footer.calc">TMT weight chart</a></li>
+          <li><a href="quality.html" data-i18n="nav.brands">Brands</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="faq.html" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="nav.contact">Contact</h4>
         <ul class="footer-links">
-          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;(Call / WhatsApp)</li>
+          <li><a href="tel:+919822221699">+91 98222 21699</a> &nbsp;<span data-i18n="footer.callwa">(Call / WhatsApp)</span></li>
           <li><a href="tel:+918380031699">+91 83800 31699</a></li>
           <li><a href="mailto:info@manishsteeltraders.com">info@manishsteeltraders.com</a></li>
-          <li>17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
+          <li data-i18n="footer.address">17 Chandak Layout, Ghat Rd, Ganeshpeth Colony, Nagpur, Maharashtra 440018</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> Manish Steel Traders Pvt. Ltd.</span>
+      <span>© <span id="year">2026</span> <span data-i18n="footer.brandname">Manish Steel Traders Pvt. Ltd.</span></span>
       <span>GSTIN 27AANCM8559N1ZE</span>
-      <span>Nagpur, Maharashtra, India</span>
+      <span data-i18n="footer.location">Nagpur, Maharashtra, India</span>
     </div>
   </div>
 </footer>
 
+<script src="assets/js/i18n-hi.js?v=7"></script>
 <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>
