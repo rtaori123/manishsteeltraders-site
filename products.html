@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Products — TMT Bars &amp; Structural Steel | Manish Steel Traders</title>
-<meta name="description" content="TMT reinforcement bars in Fe500, Fe500D and Fe550D from SEL Tiger, Kamdhenu, Lodha, Sangam, Sky and NR, stocked with binding wire in Nagpur — structural steel and the wider range sourced to order across Nagpur and Vidarbha.">
+<meta name="description" content="TMT reinforcement bars and binding wire stocked in our Nagpur yard, with angles, channels, rounds, plates, sheets, pipes and the wider steel range sourced to order across Nagpur and Vidarbha.">
 <link rel="canonical" href="https://manishsteeltraders.com/products.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Products — Manish Steel Traders, Nagpur">
@@ -18,6 +18,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=19">
+<style>
+  /* Speciality product cards (Products page). Two equal cards, image on top at a
+     fixed ratio — replaces the old .split / .photo--tall layout that stretched the
+     image. Buttons bottom-aligned so the two cards match. Deeper TMT specs (grade
+     table) now live on faq.html. */
+  .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  @media (max-width: 760px) { .feature-grid { grid-template-columns: 1fr; } }
+  .feature-card { display: flex; flex-direction: column; background: #fff;
+    border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .feature-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;
+    background: var(--paper-2); }
+  .feature-body { display: flex; flex-direction: column; flex: 1;
+    padding: clamp(22px, 3vw, 32px); }
+  .feature-body h3 { font-size: 1.32rem; margin-bottom: .5rem; }
+  .feature-body > p { color: var(--muted); }
+  .feature-note { font-size: .95rem; color: var(--muted); margin: 4px 0 0; }
+  .feature-body .btn-row { margin-top: auto; padding-top: 18px; }
+  /* offset anchor jumps so a deep-linked product isn't hidden under the header */
+  .feature-card[id], .tile[id] { scroll-margin-top: 90px; }
+</style>
 </head>
 <body>
 
@@ -46,141 +66,100 @@
   <div class="container">
     <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Products</div>
     <h1>Products</h1>
-    <p class="lead">TMT reinforcement bars and binding wire are what we keep in the yard — with structural sections and the wider steel range sourced to order, to spec and delivered to site.</p>
+    <p class="lead">The steel we supply for construction across Nagpur and Vidarbha are <b>TMT reinforcement bars and binding wire</b> from our own yard, with structural sections and the wider range sourced to order and delivered to site.</p>
   </div>
 </section>
 
-<!-- TMT (featured specialty) -->
-<section class="section" id="tmt">
+<!-- ================= OUR SPECIALITY — stocked in our yard =================
+     Consistent with the home page: TMT bars and binding wire are the two lines we
+     keep ready to load in our own yard. Two equal cards, image on top at a fixed
+     ratio (no more .split / .photo--tall stretch). The ?v=2 on the image URLs is a
+     cache-buster — the files were replaced 2026-08-14 and browsers had the old ones
+     cached; bump the number again if you swap these images later.
+     Deeper TMT specs (the grade table) now live on faq.html. -->
+<section class="section" id="speciality">
   <div class="container">
-    <div class="split">
-      <div>
-        <span class="eyebrow">Our specialty</span>
-        <hr class="rule">
-        <h2>TMT reinforcement bars</h2>
-        <p class="measure">High-strength TMT (thermo-mechanically treated) bars for slabs, columns, beams and footings — the core of what we supply. We keep the full range in stock, in the grades and brands your design demands.</p>
-        <ul class="list" style="margin-top:14px">
-          <li><strong>Sizes</strong> — 8, 10, 12, 16, 20, 25 and 32 mm</li>
-          <li><strong>Grades</strong> — Fe500, Fe500D and Fe550D, to IS&nbsp;1786. Our branded range is ISI-marked; ask us and we'll confirm the marking for whichever brand you're quoted.</li>
-          <li><strong>Brands we supply</strong> — SEL Tiger, Kamdhenu, Lodha, Sangam, Sky and NR. Need another brand? We can usually source it.</li>
-          <li><strong>Applications</strong> — RCC slabs, columns, beams and footings; residential to commercial</li>
-          <li><strong>Quality-checked</strong> — correct grade and size, verified before dispatch</li>
-          <li><strong>Delivered to site</strong> — same day within Nagpur; across the wider Vidarbha region on a timeline we'll confirm when we quote</li>
-          <li><strong>Sourced from the mills</strong> — the eastern, Chhattisgarh and Vidarbha belts, then held in our own yard</li>
-        </ul>
-        <p class="measure" style="margin-top:18px">Not sure which grade your drawing calls for? Send us the requirement and we'll confirm what fits before you commit to anything.</p>
-        <p class="measure" style="margin-top:10px">Working out tonnage? Our <a href="calculator.html">TMT weight chart</a> gives kg per metre, per bar and bars per tonne for every size.</p>
-        <div class="btn-row" style="margin-top:22px">
-          <a class="btn" href="tel:+919822221699">Call for rates</a>
-          <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20TMT%20bars%20(size%20%2F%20grade%20%2F%20quantity)." target="_blank" rel="noopener">WhatsApp a requirement</a>
+    <div class="sec-head"><h2>Our speciality — stocked in our yard</h2></div>
+    <p class="center lead" style="margin:0 auto 36px">TMT reinforcement bars and binding wire are what we keep ready to load in our own yard. These are the two lines we supply day in, day out, delivered same day within Nagpur.</p>
+    <div class="feature-grid">
+
+      <article class="feature-card" id="tmt">
+        <img class="feature-img" src="assets/img/product-tmt.jpg?v=2" alt="Ribbed TMT reinforcement bars, straight lengths and coils" loading="lazy">
+        <div class="feature-body">
+          <h3>TMT reinforcement bars</h3>
+          <p>Thermo-mechanically treated bars for slabs, columns, beams and footings — the core of what we do. We keep the full range in the yard, in the sizes and grades your design calls for (8&ndash;32&nbsp;mm; Fe&nbsp;500, Fe&nbsp;500D and Fe&nbsp;550D to IS&nbsp;1786), each quality-checked before dispatch. Not sure which grade or how much you need? Send your requirement and we'll confirm what fits.</p>
+          <p class="feature-note">Working out quantities? Our <a href="calculator.html">TMT weight chart</a> gives kg per metre, per bar and bars per tonne.</p>
+          <div class="btn-row">
+            <a class="btn" href="tel:+919822221699">Call for rates</a>
+            <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20TMT%20bars%20(size%20%2F%20grade%20%2F%20quantity)." target="_blank" rel="noopener">WhatsApp a requirement</a>
+          </div>
         </div>
-      </div>
-      <div class="split-media">
-        <img class="photo photo--tall" src="assets/img/tmt-bars.jpg" alt="Close-up of stacked TMT reinforcement bars" loading="lazy">
-      </div>
+      </article>
+
+      <article class="feature-card" id="binding-wire">
+        <img class="feature-img" src="assets/img/product-wires.jpg?v=2" alt="Coils of steel binding wire" loading="lazy">
+        <div class="feature-body">
+          <h3>Binding wire</h3>
+          <p>Soft-annealed steel wire for tying reinforcement steady before the pour. We keep it in the yard alongside the bars, so it loads onto the same delivery — no second trip and no chasing it down separately. Tell us the quantity and we'll supply the gauge to suit.</p>
+          <div class="btn-row">
+            <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20please%20add%20binding%20wire%20to%20my%20order.%20Quantity%3A" target="_blank" rel="noopener">Add binding wire to your order</a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<!-- ================= GRADE COMPARISON =================
-     Values are the minimums specified in IS 1786 for each grade. They are the standard
-     figures, not our own claims — a mill test certificate for a specific batch will show
-     the actual values achieved, which are normally above these. -->
-<section class="section band" id="grades">
-  <div class="container">
-    <div class="head">
-      <span class="eyebrow">Choosing a grade</span>
-      <hr class="rule">
-      <h2>Fe 500 vs Fe 500D vs Fe 550D</h2>
-      <p class="measure">The "D" stands for ductility — a D-grade bar bends further before it fails, which is what matters in a seismic zone. The higher number is more strength. Here is what IS&nbsp;1786 requires of each.</p>
-    </div>
-    <div class="table-wrap">
-      <table class="ref-table">
-        <thead>
-          <tr><th>Grade</th><th>Min yield strength</th><th>Min tensile strength</th><th>Min elongation</th><th>Typically used for</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><strong>Fe 500</strong></td><td>500 N/mm&sup2;</td><td>545 N/mm&sup2;</td><td>12%</td><td>General residential and commercial RCC work</td></tr>
-          <tr><td><strong>Fe 500D</strong></td><td>500 N/mm&sup2;</td><td>565 N/mm&sup2;</td><td>16%</td><td>Same strength, more ductility — the common choice for seismic zones</td></tr>
-          <tr><td><strong>Fe 550</strong></td><td>550 N/mm&sup2;</td><td>585 N/mm&sup2;</td><td>10%</td><td>Higher strength where the design calls for it</td></tr>
-          <tr><td><strong>Fe 550D</strong></td><td>550 N/mm&sup2;</td><td>600 N/mm&sup2;</td><td>14.5%</td><td>High strength with ductility — heavier structures</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note">Figures are the minimums laid down in IS&nbsp;1786. Actual values on any given batch appear on its mill test certificate, which we supply on request. If you are unsure which grade your drawing specifies, send it over and we'll confirm before you order.</p>
-  </div>
-</section>
-
-<!-- ================= WHY TMT ================= -->
-<section class="section">
-  <div class="container">
-    <div class="head">
-      <span class="eyebrow">Know your material</span>
-      <hr class="rule">
-      <h2>What makes a TMT bar different</h2>
-      <p class="measure">TMT stands for thermo-mechanically treated. The bar is quenched from rolling heat so the outer skin hardens, then allowed to self-temper so the core stays soft. That combination is the whole point.</p>
-    </div>
-    <div class="grid grid-2" style="margin-top:28px; gap:0 60px">
-      <ul class="list">
-        <li><strong>Strength where it is needed</strong> — the hardened outer layer carries the load, so a thinner bar does the work of a heavier plain one.</li>
-        <li><strong>Ductility in the core</strong> — the soft centre lets the bar bend and absorb movement rather than snapping. This is what matters in an earthquake.</li>
-      </ul>
-      <ul class="list">
-        <li><strong>Bends without cracking</strong> — important on site, where bars are bent to shape rather than used straight.</li>
-        <li><strong>Better bond with concrete</strong> — the rib pattern rolled into the surface is what grips the concrete around it.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- structural -->
+<!-- ================= SOURCED TO ORDER ================= -->
 <section class="section band">
   <div class="container">
-    <div class="split split--rev">
-      <div>
-        <span class="eyebrow">Structural — sourced to order</span>
-        <hr class="rule">
-        <h2>Structural steel</h2>
-        <p class="measure">Structural sections sourced to order and supplied to specification for framing, fabrication and site work. Tell us the sizes and quantity and we'll quote with a delivery timeline.</p>
-        <ul class="list" style="margin-top:12px">
-          <li><strong>Angles &amp; channels</strong> — MS angles and channels in common sizes</li>
-          <li><strong>Beams &amp; joists</strong> — for structural spans</li>
-          <li><strong>Flats &amp; plates</strong> — MS flats and plates for fabrication</li>
-          <li><strong>Rounds &amp; squares</strong> — bars as required</li>
-        </ul>
-        <div class="btn-row" style="margin-top:20px">
-          <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20structural%20steel." target="_blank" rel="noopener">WhatsApp a requirement</a>
-        </div>
-      </div>
-      <div class="split-media">
-        <img class="photo" src="assets/img/structural-steel.jpg" alt="Stacked structural steel sections in a yard" loading="lazy">
-      </div>
+    <div class="sec-head"><h2>Sourced to order</h2></div>
+    <p class="center lead" style="margin:0 auto 34px">Structural sections and the wider steel range we bring in against your sizes and quantity, with a delivery timeline confirmed when we quote.</p>
+    <div class="grid grid-3">
+
+      <article class="tile" id="angles">
+        <img class="tile-img" src="assets/img/product-angles.jpg" alt="Steel angles and channels" loading="lazy">
+        <h3>Angles &amp; channels</h3>
+        <p>MS angles and channels in the common construction sizes, for framing, fabrication and general structural work.</p>
+      </article>
+
+      <article class="tile" id="rounds">
+        <img class="tile-img" src="assets/img/product-round.jpg" alt="Round and square steel bars" loading="lazy">
+        <h3>Rounds &amp; square bars</h3>
+        <p>MS round and square bars for fabrication, grilles, gates and general site work, in the usual sizes.</p>
+      </article>
+
+      <article class="tile" id="plates">
+        <img class="tile-img" src="assets/img/product-plates.jpg" alt="Steel flats, sheets and plates" loading="lazy">
+        <h3>Plates &amp; sheets</h3>
+        <p>MS flats, sheets and plates for fabrication and structural work, to your thickness and size.</p>
+      </article>
+
+      <article class="tile" id="pipes">
+        <img class="tile-img" src="assets/img/product-pipes.jpg" alt="Steel pipes and tubes" loading="lazy">
+        <h3>Pipes &amp; tubes</h3>
+        <p>MS pipes and tubes for structural and general use — tell us the diameter, gauge and quantity.</p>
+      </article>
+
+      <article class="tile" id="beams">
+        <img class="tile-img" src="assets/img/product-structural.jpg" alt="Structural steel beams and joists" loading="lazy">
+        <h3>Beams &amp; joists</h3>
+        <p>Structural beams and joists for spans, sourced to specification for your fabrication and site work.</p>
+      </article>
+
+      <article class="tile" style="display:flex; flex-direction:column; justify-content:center; align-items:flex-start; background:var(--navy); color:var(--on-dark); border-color:var(--navy)">
+        <h3 style="color:#fff">Something else?</h3>
+        <p style="color:var(--on-dark-mut)">If you buy it for a construction site, we can usually source it. Tell us what you need and we'll come back with a rate.</p>
+        <a class="btn btn--wa" style="margin-top:16px" href="https://wa.me/919822221699?text=Hi%2C%20do%20you%20supply%20the%20following%3F%20" target="_blank" rel="noopener">Ask if we source it</a>
+      </article>
+
     </div>
   </div>
 </section>
 
-<!-- other -->
+<!-- ================= QUOTE STRIP ================= -->
 <section class="section">
-  <div class="container">
-    <div class="head">
-      <span class="eyebrow">And more</span>
-      <hr class="rule">
-      <h2>Other steel materials</h2>
-      <p class="lead">Tell us what your site needs and we'll source and supply it.</p>
-    </div>
-    <div class="grid grid-3" style="margin-top:34px">
-      <article class="tile"><img class="tile-img" src="assets/img/product-wires.jpg" alt="Binding wire coil" loading="lazy"><h3>Binding wire</h3><p>Kept in stock, for tying reinforcement on site.</p></article>
-      <article class="tile"><img class="tile-img" src="assets/img/product-round.jpg" alt="MS wire and rods" loading="lazy"><h3>MS wire &amp; rods</h3><p>General-purpose steel wire and rods.</p></article>
-      <article class="tile"><img class="tile-img" src="assets/img/product-plates.jpg" alt="Assorted steel materials" loading="lazy"><h3>On request</h3><p>Other steel materials as per your project requirement.</p></article>
-    </div>
-    <div class="btn-row" style="margin-top:30px; justify-content:center">
-      <a class="btn btn--wa" href="https://wa.me/919822221699?text=Hi%2C%20do%20you%20supply%20the%20following%3F%20" target="_blank" rel="noopener">Ask if we stock it</a>
-    </div>
-  </div>
-</section>
-
-<!-- quote strip -->
-<section class="section band">
   <div class="container strip">
     <h2>Tell us your requirement</h2>
     <p class="lead">Share sizes, grades and quantity — we'll send a competitive rate.</p>
@@ -199,7 +178,7 @@
           <img src="assets/img/logo-mark.png" alt="Manish Steel Traders logo">
           <strong>Manish Steel Traders Pvt. Ltd.</strong>
         </div>
-        <p>Steel distributors, stockists and retailers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
+        <p>Steel traders and suppliers. TMT reinforcement bars &amp; binding wire from our Nagpur yard, with structural and other steel to order. Serving Nagpur and the Vidarbha region since 1995.</p>
       </div>
       <div>
         <h4>Pages</h4>
@@ -211,6 +190,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
       <div>
@@ -231,6 +211,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=2"></script>
+<script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
