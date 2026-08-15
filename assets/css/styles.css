@@ -15,9 +15,9 @@
   --line:      #e4e4e1;
   --line-2:    #d5d5d1;
   --line-dark: #3a352f;   /* dividers on charcoal */
-  --gold:      #ea6a1e;   /* accent (bright orange) — decorative / on light */
-  --gold-2:    #f2853c;   /* accent on dark (bright orange) */
-  --gold-deep: #c2410b;   /* accent text/icons on white (burnt orange, AA) */
+  --gold:      #f05822;   /* accent (NR TMT orange) — decorative / on light */
+  --gold-2:    #f05822;   /* accent on dark (NR TMT orange) */
+  --gold-deep: #c23c10;   /* accent text/icons on white (deep NR orange, 5.3:1 AA) */
   --on-dark:   #e9edf1;
   --on-dark-mut:#9fb1c0;
 
